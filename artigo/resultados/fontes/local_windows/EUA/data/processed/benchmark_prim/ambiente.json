@@ -1,0 +1,15 @@
+{
+  "sistema": "Windows-11-10.0.26200-SP0",
+  "processador": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+  "processador_env": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+  "cpu_logicas": 12,
+  "python": "3.13.14",
+  "numpy": "2.3.5",
+  "pandas": "3.0.5",
+  "matplotlib": "3.10.7",
+  "inclinacao_log_log_descritiva": 2.039635398222345,
+  "sha256_prim": "43e3d7633881ba55138c61e9c5ce327217584f47a43585a8fc9f4ba23fec5e73",
+  "sha256_benchmark": "6ed9782ff14b082a5bdab81d2a3989763c6b8ee2ddf23a371dfcb22fc5fedfda",
+  "sha256_executavel": "0855970382944d694e7966d93fa0fe62cbc96300046a2a6c5e275fac4c954944",
+  "observacao": "Memória reportada é só V² doubles, sem overhead. Medições de lotes aquecidos incluem alocações, destruição e consumo O(1) do resultado."
+}

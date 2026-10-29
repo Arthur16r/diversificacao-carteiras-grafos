@@ -1,0 +1,75 @@
+﻿Id,Label,Classe,Carteira_MST,Grau_MST
+MSFT,MSFT,Acao,Nao selecionado,2
+INTC,INTC,Acao,Nao selecionado,4
+IBM,IBM,Acao,Nao selecionado,1
+ORCL,ORCL,Acao,Selecionado,1
+CSCO,CSCO,Acao,Nao selecionado,2
+HPQ,HPQ,Acao,Nao selecionado,1
+T,T,Acao,Nao selecionado,1
+VZ,VZ,Acao,Nao selecionado,2
+WMT,WMT,Acao,Nao selecionado,1
+PG,PG,Acao,Nao selecionado,3
+KO,KO,Acao,Nao selecionado,2
+PEP,PEP,Acao,Nao selecionado,2
+CL,CL,Acao,Nao selecionado,1
+MO,MO,Acao,Selecionado,1
+GE,GE,Acao,Nao selecionado,8
+HON,HON,Acao,Nao selecionado,1
+MMM,MMM,Acao,Nao selecionado,1
+RTX,RTX,Acao,Nao selecionado,4
+BA,BA,Acao,Nao selecionado,2
+LMT,LMT,Acao,Nao selecionado,2
+NOC,NOC,Acao,Selecionado,1
+GD,GD,Acao,Nao selecionado,2
+XOM,XOM,Acao,Nao selecionado,2
+CVX,CVX,Acao,Nao selecionado,3
+COP,COP,Acao,Nao selecionado,1
+DD,DD,Acao,Nao selecionado,1
+PPG,PPG,Acao,Nao selecionado,5
+AA,AA,Acao,Nao selecionado,1
+C,C,Acao,Nao selecionado,2
+BAC,BAC,Acao,Nao selecionado,3
+JPM,JPM,Acao,Nao selecionado,2
+WFC,WFC,Acao,Nao selecionado,4
+USB,USB,Acao,Nao selecionado,1
+AIG,AIG,Acao,Nao selecionado,1
+MET,MET,Acao,Nao selecionado,6
+TRV,TRV,Acao,Nao selecionado,1
+BRK-B,BRK-B,Acao,Nao selecionado,1
+JNJ,JNJ,Acao,Nao selecionado,3
+PFE,PFE,Acao,Nao selecionado,3
+MRK,MRK,Acao,Nao selecionado,1
+ABT,ABT,Acao,Nao selecionado,1
+HD,HD,Acao,Nao selecionado,2
+MCD,MCD,Acao,Nao selecionado,1
+DIS,DIS,Acao,Nao selecionado,1
+SO,SO,Acao,Selecionado,2
+DUK,DUK,Acao,Nao selecionado,1
+AEP,AEP,Acao,Nao selecionado,3
+NEE,NEE,Acao,Nao selecionado,2
+UNP,UNP,Acao,Nao selecionado,1
+FDX,FDX,Acao,Nao selecionado,1
+SPG,SPG,REIT,Nao selecionado,2
+MAC,MAC,REIT,Nao selecionado,1
+KIM,KIM,REIT,Nao selecionado,3
+REG,REG,REIT,Nao selecionado,1
+BXP,BXP,REIT,Nao selecionado,12
+VNO,VNO,REIT,Nao selecionado,1
+SLG,SLG,REIT,Nao selecionado,1
+CPT,CPT,REIT,Nao selecionado,1
+MAA,MAA,REIT,Nao selecionado,1
+ESS,ESS,REIT,Nao selecionado,1
+UDR,UDR,REIT,Nao selecionado,1
+WELL,WELL,REIT,Selecionado,1
+VTR,VTR,REIT,Selecionado,1
+PSA,PSA,REIT,Nao selecionado,1
+ARE,ARE,REIT,Nao selecionado,1
+HST,HST,REIT,Nao selecionado,1
+O,O,REIT,Nao selecionado,1
+FR,FR,REIT,Selecionado,1
+PLD,PLD,REIT,Nao selecionado,5
+WPC,WPC,REIT,Selecionado,1
+tesouro_curto,tesouro_curto,Treasury,Selecionado,1
+tesouro_medio,tesouro_medio,Treasury,Nao selecionado,2
+tesouro_longo,tesouro_longo,Treasury,Nao selecionado,3
+tesouro_tips,tesouro_tips,Treasury,Selecionado,1

@@ -1,0 +1,51 @@
+"""
+Corrige o erro de escala do XPML11.SA: o Yahoo Finance deixou o
+histórico antigo (até 13/01/2026) numa escala ~7.3x menor que a real,
+com 3 dias quebrados no meio (14-16/01/2026) antes de "corrigir sozinho"
+a partir de 19/01/2026 (nível confirmado como correto: XPML11 fechou o
+pregão de 19/01/2026 a R$109,60, e começou o ano em torno de R$101,67).
+
+Correção: reescala tudo ANTES da quebra pelo fator (preço bom depois /
+preço bom antes), e remove os dias quebrados do meio (interpolando).
+"""
+
+import pandas as pd
+from pathlib import Path
+
+PATH = Path(__file__).parent.parent / "data" / "raw" / "precos_acoes_fiis.csv"
+
+TICKER = "XPML11.SA"
+ULTIMO_DIA_BOM_ANTES = "2026-01-13"
+DIAS_QUEBRADOS = ["2026-01-14", "2026-01-15", "2026-01-16"]
+PRIMEIRO_DIA_BOM_DEPOIS = "2026-01-19"
+
+
+def main():
+    df = pd.read_csv(PATH, index_col="data", parse_dates=True)
+
+    preco_antes = df.loc[ULTIMO_DIA_BOM_ANTES, TICKER]
+    preco_depois = df.loc[PRIMEIRO_DIA_BOM_DEPOIS, TICKER]
+    fator = preco_depois / preco_antes
+    print(f"Preço antes ({ULTIMO_DIA_BOM_ANTES}): {preco_antes:.4f}")
+    print(f"Preço depois ({PRIMEIRO_DIA_BOM_DEPOIS}): {preco_depois:.4f}")
+    print(f"Fator de reescala aplicado ao histórico antigo: {fator:.4f}")
+
+    # reescala tudo ATE o ultimo dia bom antes (inclusive) pelo fator
+    mascara_antiga = df.index <= pd.Timestamp(ULTIMO_DIA_BOM_ANTES)
+    df.loc[mascara_antiga, TICKER] = df.loc[mascara_antiga, TICKER] * fator
+
+    # remove os dias quebrados do meio (viram NaN, depois interpolados)
+    for dia in DIAS_QUEBRADOS:
+        if pd.Timestamp(dia) in df.index:
+            df.loc[pd.Timestamp(dia), TICKER] = None
+
+    df[TICKER] = df[TICKER].interpolate(method="linear")
+
+    df.to_csv(PATH)
+    print(f"\nCorrigido e salvo em {PATH}")
+    print("\nConferência da janela ao redor da correção:")
+    print(df.loc["2026-01-08":"2026-01-22", [TICKER]])
+
+
+if __name__ == "__main__":
+    main()

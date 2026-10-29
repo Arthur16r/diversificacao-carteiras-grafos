@@ -1,0 +1,232 @@
+[
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/resultado_backtest_mst.csv",
+    "sha256_texto_utf8_normalizado": "704ebfe4c9c07247bfddc20fdc7ff59035f73f07f939d299103421877256a466"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/comparacao_aleatorias_mst.csv",
+    "sha256_texto_utf8_normalizado": "634922ef506cd7b844e935663fb9ab2d65576f0225f83e4594600b90558d7130"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/comparacao_aportes_completa.csv",
+    "sha256_texto_utf8_normalizado": "d42ca4865d95129b9af801794eb819f839e4c419c6e5bdc41c073272bb9fd579"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/resultado_varredura_n.csv",
+    "sha256_texto_utf8_normalizado": "a0f345ab328f895a7a7c11e3c0bbb7b9bf08bda7e9c035e59f2393d64d7a7518"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/experimento_aleatorias_cotas.json",
+    "sha256_texto_utf8_normalizado": "5eef8d8f165f9a95bfc460ef2decaba2bf3107ef7b106cffa6b49f782b2e9616"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/experimento_aportes.json",
+    "sha256_texto_utf8_normalizado": "ed158727aa7a20c1f75b8a3ba7c6e2b2cad4f683f8aba15b0348b297d767bb48"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/resultado_backtest_mst.csv",
+    "sha256_texto_utf8_normalizado": "76797f6cbc67230c7bd3150052767b9aba3031c005c77deea54322e6c3945f50"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/comparacao_aleatorias_mst.csv",
+    "sha256_texto_utf8_normalizado": "c331a2fc32cff1e99223c45d62a8fb4f2e08fd4089a677bebc419d68390fb78e"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/comparacao_aportes_completa.csv",
+    "sha256_texto_utf8_normalizado": "660b63f08ec2419b9400e6a15c9a260fea4ab9db5c23ee1e01d74591dbf492a4"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/resultado_varredura_n.csv",
+    "sha256_texto_utf8_normalizado": "ddb66d36f0c986f43216716447bb079349f7ac4020f2b41a5020b8c664a463f7"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/experimento_aleatorias_cotas.json",
+    "sha256_texto_utf8_normalizado": "e6ea2a5a030035dc4b921c551024f86c442e4a2a26cc922860e3dd6ee7225ded"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/experimento_aportes.json",
+    "sha256_texto_utf8_normalizado": "14842ed86676e6bbf4dd2a4746f5812c6e9c52b70e2949d7dd7dc6a5393fc1b4"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/estabilidade_mst/resumo.json",
+    "sha256_texto_utf8_normalizado": "07dd36ec994d65792621d2afb4c472c3f48d71b82e7fda68534549d12bf6eda9"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/robustez_janela_comum/comparacao_backtest.csv",
+    "sha256_texto_utf8_normalizado": "d9fefb8c063ccb606866ab06506bfd5240e1198607d0ca73fd28a71eb0d5f6b4"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "BRASIL/data/processed/resultado_varredura_exterior.csv",
+    "sha256_texto_utf8_normalizado": "17b9ac819d1f21c0a0b5dc9017c0cea366d65baf40461a1ce86509cb3d416912"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim/resumo.csv",
+    "sha256_texto_utf8_normalizado": "f9e02902e69225abffcb0efa24752648a8fc50ea0c4ba7370dcc9e487581c641"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim/medicoes.csv",
+    "sha256_texto_utf8_normalizado": "ae93a5ad5b3fa70360e97d284267d164a7eb8e5babccb28c7b161d4718927d96"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim/ambiente.json",
+    "sha256_texto_utf8_normalizado": "8d21eaa08959bcb15031c946931d20d1e5027ce8c3a0b5fb600af872dbed8ff2"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim/compilacao.txt",
+    "sha256_texto_utf8_normalizado": "58c371b6517165fb07fd71160983ec870daf162cea45ffafcac105ba6d2e1c89"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/resumo.csv",
+    "sha256_texto_utf8_normalizado": "c66cc73e1e8a1982e4347dac9839348a95f1263c22324423d9e96569672dd5b2"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/medicoes.csv",
+    "sha256_texto_utf8_normalizado": "354f766b62c35fd818167dd5e16fcd0906617e43054d4058c8c980affc610fb4"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/ambiente.json",
+    "sha256_texto_utf8_normalizado": "d5466d87241032bc30ea09ee46568734658a51ed755b2dce2ddb332c88083945"
+  },
+  {
+    "origem": "local_windows",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/compilacao.txt",
+    "sha256_texto_utf8_normalizado": "58c371b6517165fb07fd71160983ec870daf162cea45ffafcac105ba6d2e1c89"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/resultado_backtest_mst.csv",
+    "sha256_texto_utf8_normalizado": "704ebfe4c9c07247bfddc20fdc7ff59035f73f07f939d299103421877256a466"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/comparacao_aleatorias_mst.csv",
+    "sha256_texto_utf8_normalizado": "634922ef506cd7b844e935663fb9ab2d65576f0225f83e4594600b90558d7130"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/comparacao_aportes_completa.csv",
+    "sha256_texto_utf8_normalizado": "d42ca4865d95129b9af801794eb819f839e4c419c6e5bdc41c073272bb9fd579"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/resultado_varredura_n.csv",
+    "sha256_texto_utf8_normalizado": "a0f345ab328f895a7a7c11e3c0bbb7b9bf08bda7e9c035e59f2393d64d7a7518"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/experimento_aleatorias_cotas.json",
+    "sha256_texto_utf8_normalizado": "5eef8d8f165f9a95bfc460ef2decaba2bf3107ef7b106cffa6b49f782b2e9616"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/experimento_aportes.json",
+    "sha256_texto_utf8_normalizado": "b770b6f49c46f12cd7db1270dc4a44174dd11f9f5f05af6955764957bdd3273b"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/resultado_backtest_mst.csv",
+    "sha256_texto_utf8_normalizado": "76797f6cbc67230c7bd3150052767b9aba3031c005c77deea54322e6c3945f50"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/comparacao_aleatorias_mst.csv",
+    "sha256_texto_utf8_normalizado": "c331a2fc32cff1e99223c45d62a8fb4f2e08fd4089a677bebc419d68390fb78e"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/comparacao_aportes_completa.csv",
+    "sha256_texto_utf8_normalizado": "660b63f08ec2419b9400e6a15c9a260fea4ab9db5c23ee1e01d74591dbf492a4"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/resultado_varredura_n.csv",
+    "sha256_texto_utf8_normalizado": "ddb66d36f0c986f43216716447bb079349f7ac4020f2b41a5020b8c664a463f7"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/experimento_aleatorias_cotas.json",
+    "sha256_texto_utf8_normalizado": "b1dbf6ef6dc14eae26351ac59f6cb7f2dfa95c394b5dddd4028a7fead0487dd8"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/experimento_aportes.json",
+    "sha256_texto_utf8_normalizado": "2ececa09214cbb6068fe45cfed3538773ced3423b70a3d94c0ce9bea87617eba"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/estabilidade_mst/resumo.json",
+    "sha256_texto_utf8_normalizado": "c7aeaac4e0c5662f7402637c38db8a160a58927060bd7d0fd8a64d17f9cdeef9"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/robustez_janela_comum/comparacao_backtest.csv",
+    "sha256_texto_utf8_normalizado": "d9fefb8c063ccb606866ab06506bfd5240e1198607d0ca73fd28a71eb0d5f6b4"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "BRASIL/data/processed/resultado_varredura_exterior.csv",
+    "sha256_texto_utf8_normalizado": "17b9ac819d1f21c0a0b5dc9017c0cea366d65baf40461a1ce86509cb3d416912"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim/resumo.csv",
+    "sha256_texto_utf8_normalizado": "7fe97e8a95c176e943594eba0ab12df3ceb73e0c32ded5ece07ca1fe9b93a111"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim/medicoes.csv",
+    "sha256_texto_utf8_normalizado": "b8876e27d2d4dcb97781e9994d7a892efc74b40391def8493fd969420c77d624"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim/ambiente.json",
+    "sha256_texto_utf8_normalizado": "dde4bb3aaaf11e011874242d1155eb258eb9c96e06c7fe8fb07879ffc7b311ee"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim/compilacao.txt",
+    "sha256_texto_utf8_normalizado": "2b1f8da38c7caf29abc580f47762b7382fe3552fbc4bc7829c70d55714fba02a"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/resumo.csv",
+    "sha256_texto_utf8_normalizado": "862ad540b5b327780e4658d7eba3bcdad8bfe8948037266026a102252d2c6106"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/medicoes.csv",
+    "sha256_texto_utf8_normalizado": "404b5a9152ef2687f2536fc17b2db21247d3c206cba37bd21ba47ff03c0b914e"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/ambiente.json",
+    "sha256_texto_utf8_normalizado": "d160de65b3cc05560ff3dfc95541db45ce64ce92039d459250cedc2865c72891"
+  },
+  {
+    "origem": "ubuntu_wsl",
+    "arquivo": "EUA/data/processed/benchmark_prim_grandes/compilacao.txt",
+    "sha256_texto_utf8_normalizado": "2b1f8da38c7caf29abc580f47762b7382fe3552fbc4bc7829c70d55714fba02a"
+  }
+]

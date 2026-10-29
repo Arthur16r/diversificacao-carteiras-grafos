@@ -1,0 +1,16 @@
+{
+  "cenarios_iniciais": [
+    0.0,
+    100000.0
+  ],
+  "aporte_mensal": 1000.0,
+  "sinal": "Fechamento mensal; primeiro mês comparado ao primeiro pregão disponível",
+  "execucao": "Fechamento do primeiro pregão após o sinal; sem compra após o fim dos dados",
+  "repeticao": true,
+  "filtros": false,
+  "unidades_fracionarias": true,
+  "custos": 0,
+  "sha256_precos": "067f0dd047c9d8690f73eab7e62fddad2264e79d7868dfb400d4030d25bcb1f2",
+  "sha256_matriz": "508aba0fbb385316a6520b636d0a0848fffda82c04c5e2292d27ebf3760fa387",
+  "sha256_mst": "425de1e0a0bffc77e3213b86094f8c0fff8f8b21eb71dece5c41bf906c14f2ee"
+}

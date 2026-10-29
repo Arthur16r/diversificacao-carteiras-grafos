@@ -1,0 +1,15 @@
+{
+  "sistema": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "processador": "x86_64",
+  "processador_env": null,
+  "cpu_logicas": 12,
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "matplotlib": "3.11.2",
+  "inclinacao_log_log_descritiva": 2.3290275205216857,
+  "sha256_prim": "952b9f4d1bbe5700822742965e21d0981077168c877d2510c79696c277cee241",
+  "sha256_benchmark": "a43cccffef379018888ae6290206acda4bd6de3858d137d02fd573f6770727ee",
+  "sha256_executavel": "5213f4bbd2cacb5bee882f01b980effe877b7bca1ad834b65f5d1f7aee77facc",
+  "observacao": "Memória reportada é só V² doubles, sem overhead. Medições de lotes aquecidos incluem alocações, destruição e consumo O(1) do resultado."
+}

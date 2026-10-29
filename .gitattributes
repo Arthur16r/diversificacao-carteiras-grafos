@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.cpp text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+Makefile text eol=lf
+# Preservar bytes das tabelas e snapshots usados em hashes.
+*.csv -text whitespace=cr-at-eol
+*.json -text whitespace=cr-at-eol
+*.svg text eol=lf
+*.png binary
+*.pdf binary
+*.gephi binary

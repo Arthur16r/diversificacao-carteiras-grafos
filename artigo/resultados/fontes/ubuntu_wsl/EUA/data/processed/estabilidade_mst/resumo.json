@@ -1,0 +1,24 @@
+{
+  "janelas": [
+    [
+      "2003_2006",
+      "2003-01-01",
+      "2006-12-31"
+    ],
+    [
+      "2007_2010",
+      "2007-01-01",
+      "2010-12-31"
+    ]
+  ],
+  "n_ativos": 74,
+  "arestas_por_arvore": 73,
+  "arestas_comuns": 29,
+  "arestas_substituidas_por_arvore": 44,
+  "fracao_preservada": 0.3972602739726027,
+  "jaccard": 0.24786324786324787,
+  "sha256_precos": "067f0dd047c9d8690f73eab7e62fddad2264e79d7868dfb400d4030d25bcb1f2",
+  "sha256_executavel": "4a4b8864d871efa0d111a06aee735c2a54f6ab059f24d5da6f60cc6f7ae0c3fe",
+  "sha256_cpp": "952b9f4d1bbe5700822742965e21d0981077168c877d2510c79696c277cee241",
+  "interpretacao": "Comparação descritiva de duas janelas; não mede estabilidade do desempenho nem significância estatística"
+}

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="1152pt" viewBox="0 0 864 1152" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-22T01:51:27.077530</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1152 
+L 864 1152 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 432 162.453591 
+Q 432 175.119965 432 186.388796 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 434.6 181.188796 
+L 432 186.388796 
+L 429.4 181.188796 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 360.331304 266.016626 
+Q 327.240965 280.576375 295.429818 294.57328 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 301.236577 294.858858 
+L 295.429818 294.57328 
+L 299.142336 290.09922 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 608.492424 265.852513 
+Q 651.994018 280.576129 694.171839 294.851699 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 690.079866 290.721838 
+L 694.171839 294.851699 
+L 688.412766 295.647361 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 152.64 378.25868 
+Q 152.64 393.021206 152.64 406.38619 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 155.24 401.18619 
+L 152.64 406.38619 
+L 150.04 401.18619 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 418.032 378.25868 
+Q 418.032 393.021206 418.032 406.38619 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 420.632 401.18619 
+L 418.032 406.38619 
+L 415.432 401.18619 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 418.032 508.158266 
+Q 418.032 519.778157 418.032 530.000506 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 420.632 524.800506 
+L 418.032 530.000506 
+L 415.432 524.800506 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 152.64 508.15946 
+Q 152.64 571.80904 152.64 634.061079 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 155.24 628.861079 
+L 152.64 634.061079 
+L 150.04 628.861079 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 418.032 602.445676 
+Q 418.032 618.954433 418.032 634.065647 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 420.632 628.865647 
+L 418.032 634.065647 
+L 415.432 628.865647 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 697.392 378.254396 
+Q 697.392 506.858122 697.392 634.064306 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 699.992 628.864306 
+L 697.392 634.064306 
+L 694.792 628.864306 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 432 721.869775 
+Q 432 735.233608 432 747.199899 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 434.6 741.999899 
+L 432 747.199899 
+L 429.4 741.999899 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 222.48 830.823414 
+Q 222.48 849.0769 222.48 865.932844 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke-dasharray: 4.625,2; stroke-dashoffset: 0; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 225.08 860.732844 
+L 222.48 865.932844 
+L 219.88 860.732844 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke-dasharray: 4.625,2; stroke-dashoffset: 0; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 641.52 830.823414 
+Q 641.52 849.0769 641.52 865.932844 
+" clip-path="url(#p3812325cbb)" style="fill: none; stroke-dasharray: 4.625,2; stroke-dashoffset: 0; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 644.12 860.732844 
+L 641.52 865.932844 
+L 638.92 860.732844 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #53677e; stroke-dasharray: 4.625,2; stroke-dashoffset: 0; stroke: #53677e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 164.862 162.198 
+L 699.138 162.198 
+Q 706.122 162.198 706.122 155.214 
+L 706.122 92.358 
+Q 706.122 85.374 699.138 85.374 
+L 164.862 85.374 
+Q 157.878 85.374 157.878 92.358 
+L 157.878 155.214 
+Q 157.878 162.198 164.862 162.198 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #edf2f7; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 164.862 266.958 
+L 699.138 266.958 
+Q 706.122 266.958 706.122 259.974 
+L 706.122 195.0228 
+Q 706.122 188.0388 699.138 188.0388 
+L 164.862 188.0388 
+Q 157.878 188.0388 157.878 195.0228 
+L 157.878 259.974 
+Q 157.878 266.958 164.862 266.958 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #edf2f7; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 46.134 378.0036 
+L 531.522 378.0036 
+Q 538.506 378.0036 538.506 371.0196 
+L 538.506 301.1796 
+Q 538.506 294.1956 531.522 294.1956 
+L 46.134 294.1956 
+Q 39.15 294.1956 39.15 301.1796 
+L 39.15 371.0196 
+Q 39.15 378.0036 46.134 378.0036 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e7f1fc; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 576.918 378.0036 
+L 817.866 378.0036 
+Q 824.85 378.0036 824.85 371.0196 
+L 824.85 301.1796 
+Q 824.85 294.1956 817.866 294.1956 
+L 576.918 294.1956 
+Q 569.934 294.1956 569.934 301.1796 
+L 569.934 371.0196 
+Q 569.934 378.0036 576.918 378.0036 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e8f4ed; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 46.134 507.906 
+L 266.13 507.906 
+Q 273.114 507.906 273.114 500.922 
+L 273.114 415.0188 
+Q 273.114 408.0348 266.13 408.0348 
+L 46.134 408.0348 
+Q 39.15 408.0348 39.15 415.0188 
+L 39.15 500.922 
+Q 39.15 507.906 46.134 507.906 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e7f1fc; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 311.526 507.906 
+L 531.522 507.906 
+Q 538.506 507.906 538.506 500.922 
+L 538.506 415.0188 
+Q 538.506 408.0348 531.522 408.0348 
+L 311.526 408.0348 
+Q 304.542 408.0348 304.542 415.0188 
+L 304.542 500.922 
+Q 304.542 507.906 311.526 507.906 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e7f1fc; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 311.526 602.19 
+L 531.522 602.19 
+Q 538.506 602.19 538.506 595.206 
+L 538.506 538.6356 
+Q 538.506 531.6516 531.522 531.6516 
+L 311.526 531.6516 
+Q 304.542 531.6516 304.542 538.6356 
+L 304.542 595.206 
+Q 304.542 602.19 311.526 602.19 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e7f1fc; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 88.038 721.6164 
+L 775.962 721.6164 
+Q 782.946 721.6164 782.946 714.6324 
+L 782.946 642.6972 
+Q 782.946 635.7132 775.962 635.7132 
+L 88.038 635.7132 
+Q 81.054 635.7132 81.054 642.6972 
+L 81.054 714.6324 
+Q 81.054 721.6164 88.038 721.6164 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e8f4ed; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 88.038 830.5668 
+L 775.962 830.5668 
+Q 782.946 830.5668 782.946 823.5828 
+L 782.946 755.838 
+Q 782.946 748.854 775.962 748.854 
+L 88.038 748.854 
+Q 81.054 748.854 81.054 755.838 
+L 81.054 823.5828 
+Q 81.054 830.5668 88.038 830.5668 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #e8f4ed; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 46.134 979.326 
+L 412.794 979.326 
+Q 419.778 979.326 419.778 972.342 
+L 419.778 874.566 
+Q 419.778 867.582 412.794 867.582 
+L 46.134 867.582 
+Q 39.15 867.582 39.15 874.566 
+L 39.15 972.342 
+Q 39.15 979.326 46.134 979.326 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #fff3df; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 451.206 979.326 
+L 817.866 979.326 
+Q 824.85 979.326 824.85 972.342 
+L 824.85 874.566 
+Q 824.85 867.582 817.866 867.582 
+L 451.206 867.582 
+Q 444.222 867.582 444.222 874.566 
+L 444.222 972.342 
+Q 444.222 979.326 451.206 979.326 
+z
+" clip-path="url(#p3812325cbb)" style="fill: #fff3df; stroke: #62748a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="432" y="34.74" transform="rotate(-0 432 34.74)">Metodologia do experimento</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #53677e" x="432" y="60.5808" transform="rotate(-0 432 60.5808)">EUA: estudo principal  •  Brasil: estudo complementar</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="432" y="108.049481" transform="rotate(-0 432 108.049481)">1 · Dados e tratamento</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(289.319648 128.940116)">Preços ajustados e séries de títulos; alinhamento das datas,</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(263.822539 141.933666)">tratamento de inconsistências e preservação das ausências históricas.</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="432" y="210.911938" transform="rotate(-0 432 210.911938)">2 · Separação temporal</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(318.221172 231.386713)">Construção: EUA 1990–2010 | Brasil 2016–2022</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(302.329453 244.153748)">Teste: EUA 2011–30/06/2026 | Brasil 2023–30/06/2026</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="288.828" y="317.068737" transform="rotate(-0 288.828 317.068737)">3 · Construção do grafo</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(138.575852 337.761716)">Retornos diários → correlação de Pearson por pares disponíveis</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(155.064289 350.910235)">Distância dᵢⱼ = √[2(1 − ρᵢⱼ)] → grafo completo ponderado</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(158.292805 363.413052)">EUA: 74 ativos | Brasil: 37 no principal; 38 com IVVB11</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="697.392" y="316.871081" transform="rotate(-0 697.392 316.871081)">Dados de teste reservados</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(633.461453 337.381716)">Preços e taxa livre de risco</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(643.318445 350.375266)">Usados após a seleção</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(614.642547 362.817817)">Sem selecionar pelo retorno futuro</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="156.132" y="430.710281" transform="rotate(-0 156.132 430.710281)">4A · Matriz completa</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(81.704695 451.382713)">Seleção gulosa da concentrada</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(96.429695 463.825263)">e farthest-first por classe</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(109.155242 476.267814)">para a diversificada</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(81.936258 488.94497)">Restrições e cotas predefinidas</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="421.524" y="430.710281" transform="rotate(-0 421.524 430.710281)">4B · Árvore mínima</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(373.288492 451.220916)">Prim em C++: Θ(V²)</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(350.165641 463.663466)">MST global com V − 1 arestas</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(351.612164 476.106017)">Distâncias: soma no caminho</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(371.907281 488.548568)">único entre os ativos</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="421.524" y="554.327081" transform="rotate(-0 421.524 554.327081)">5 · Carteira pela MST</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(365.627633 574.837716)">Farthest-first por classe</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(348.538766 587.280266)">Mesmas cotas da diversificada</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="432" y="658.388681" transform="rotate(-0 432 658.388681)">6 · Backtest fora da amostra</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(275.753203 679.061113)">Carteiras selecionadas na construção + preços da janela de teste</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(294.432578 691.503663)">Pesos iniciais iguais; buy-and-hold, sem rebalanceamento</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(306.462695 704.497214)">Sem custos de negociação; quantidades fracionárias</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="432" y="771.727138" transform="rotate(-0 432 771.727138)">7 · Avaliação e comparação</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(264.797031 792.420116)">CAGR, volatilidade, Sharpe com excessos diários e drawdown máximo</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(278.234336 804.862666)">Pesos finais e número efetivo de ativos; referência livre de risco:</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(296.248711 817.856217)">Treasury de 3 meses (EUA) | índice sintético Selic (Brasil)</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="229.464" y="890.697481" transform="rotate(-0 229.464 890.697481)">Análises complementares · carteiras</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(103.517008 910.768116)">5.000 aleatórias com o mesmo N e as mesmas cotas</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(129.766695 923.210666)">Varredura de N e cenário com mais ativos</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(102.333961 936.204217)">Aportes mensais: igualitário e menor retorno anterior</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(163.050094 948.646768)">Brasil: variante com IVVB11</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="634.536" y="890.697481" transform="rotate(-0 634.536 890.697481)">Análises complementares · estrutura</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(519.35518 911.148116)">EUA: estabilidade das arestas entre subperíodos</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(514.476781 923.616495)">EUA: robustez com construção comum 2003–2010</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(519.372992 936.610045)">Benchmark de Prim: grafos completos sintéticos</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #26384b" transform="translate(511.86057 949.603596)">Tempo por V; memória da matriz; execução Ubuntu</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b45" x="432" y="1012.5" transform="rotate(-0 432 1012.5)">Leitura do fluxograma</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #53677e" transform="translate(262.311445 1025.532883)">Azul: estimação e seleção na construção. Verde: teste fora da amostra.</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #53677e" transform="translate(212.170742 1039.317086)">Amarelo: experimentos separados que usam etapas do pipeline; não são etapas de seleção.</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #53677e" transform="translate(226.452656 1053.450414)">Farthest-first é uma heurística: não garante a carteira globalmente mais diversificada.</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; fill: #53677e" transform="translate(224.807227 1067.583742)">As janelas indicam os limites do experimento; alguns ativos começam depois do início.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3812325cbb">
+   <rect x="12.96" y="17.28" width="838.08" height="1117.44"/>
+  </clipPath>
+ </defs>
+</svg>

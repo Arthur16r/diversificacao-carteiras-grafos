@@ -1,0 +1,11 @@
+﻿arquivo,linhas_local,linhas_ubuntu,equivalentes
+EUA/data/processed/resultado_backtest_mst.csv,3,3,True
+EUA/data/processed/comparacao_aleatorias_mst.csv,8,8,True
+EUA/data/processed/comparacao_aportes_completa.csv,16,16,True
+EUA/data/processed/resultado_varredura_n.csv,14,14,True
+BRASIL/data/processed/resultado_backtest_mst.csv,3,3,True
+BRASIL/data/processed/comparacao_aleatorias_mst.csv,8,8,True
+BRASIL/data/processed/comparacao_aportes_completa.csv,16,16,True
+BRASIL/data/processed/resultado_varredura_n.csv,14,14,True
+EUA/data/processed/robustez_janela_comum/comparacao_backtest.csv,4,4,True
+BRASIL/data/processed/resultado_varredura_exterior.csv,19,19,True

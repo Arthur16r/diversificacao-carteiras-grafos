@@ -1,0 +1,17 @@
+{
+  "n_carteiras": 5000,
+  "seed": 42,
+  "cotas": {
+    "acao": 3,
+    "fii": 3,
+    "tesouro": 2
+  },
+  "criterio_principal": "sharpe",
+  "pesos_iniciais": "iguais",
+  "rebalanceamento": false,
+  "inicio_efetivo": "2023-01-02",
+  "fim_efetivo": "2026-06-30",
+  "sha256_matriz": "74197dd300434acd6c54002b7a14cd4d3b85799e6cbec107f3f63cb4f8453f6c",
+  "sha256_precos": "cf192eba40ee4fd5a30670d2c02832b548ab01a7aa2cd96d5432d2f22a7935c8",
+  "interpretacao": "Comparação descritiva de carteiras na mesma janela; não são testes temporais independentes"
+}

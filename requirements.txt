@@ -1,0 +1,7 @@
+# Dependências diretas; não é um lock de versões.
+numpy
+pandas
+scipy
+requests
+yfinance
+matplotlib

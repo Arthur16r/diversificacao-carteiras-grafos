@@ -1,0 +1,10 @@
+{
+  "vertices": 74,
+  "arestas_completo": 2701,
+  "arestas_mst": 73,
+  "arestas_adicionais": 2628,
+  "sha256_matriz": "508aba0fbb385316a6520b636d0a0848fffda82c04c5e2292d27ebf3760fa387",
+  "sha256_mst": "1b981baf7e5cb60a3773b870d8f4194066fc16ecef81f1fbfa7189749e932d79",
+  "peso_visual": 1,
+  "observacao": "Correlacao = 1 - Distancia²/2; sem filtro. Layout não é recalculado."
+}

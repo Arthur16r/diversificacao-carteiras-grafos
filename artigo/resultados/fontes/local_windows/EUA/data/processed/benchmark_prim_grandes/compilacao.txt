@@ -1,0 +1,5 @@
+Compilador: 15.2.0
+C++: 201703
+Flags previstas pelo Makefile: -std=c++17 -Wall -O2
+steady_clock::is_steady: 1
+Periodo nominal do relogio: 1/1000000000 segundos

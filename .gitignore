@@ -1,0 +1,24 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.exe
+EUA/cpp/mst
+BRASIL/cpp/mst
+EUA/cpp/benchmark_prim
+
+# Dataset será distribuído separadamente; preservar instruções de posicionamento.
+EUA/data/raw/*
+BRASIL/data/raw/*
+!EUA/data/raw/README.md
+!BRASIL/data/raw/README.md
+EUA/data/processed/*
+BRASIL/data/processed/*
+!EUA/data/processed/README.md
+!BRASIL/data/processed/README.md
+BRASIL/data/archive/
+
+# Logs locais de execução; o relatório resumido permanece versionado.
+validacao/execucao_*/

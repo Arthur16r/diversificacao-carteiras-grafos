@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1083.0474"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-572.208374 -647.956360 1083.047363 1336.462891"
+     height="1336.4629" preserveAspectRatio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="2.349238"
+              d="M 45.168232,247.639771 L 108.486549,260.510803"
+              class="id_MSFT id_INTC" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 122.589508,267.081451 L 152.438889,290.800964"
+              class="id_INTC id_CSCO" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 124.097382,260.204651 L 172.226944,248.438919"
+              class="id_INTC id_HPQ" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 164.606750,301.175781 L 189.914124,324.311035"
+              class="id_CSCO id_ORCL" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 118.746368,254.479248 L 124.965996,234.883118"
+              class="id_INTC id_IBM" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 29.448421,244.666534 L -48.731319,230.979218"
+              class="id_MSFT id_GE" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -54.056278,222.018631 L -14.795301,105.535324"
+              class="id_GE id_JPM" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -9.721712,90.361099 L 24.727066,-13.505619"
+              class="id_JPM id_BAC" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 29.674982,-28.721050 L 64.812790,-138.959885"
+              class="id_BAC id_WFC" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 21.028625,-16.063921 L 1.072145,0.098631" class="id_BAC id_C"
+              stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 63.846931,-139.338348 L 55.810646,-122.193634"
+              class="id_WFC id_USB" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 60.777817,-151.294861 L -33.617424,-220.111618"
+              class="id_WFC id_MET" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 74.655052,-149.590576 L 217.174591,-207.433197"
+              class="id_WFC id_BXP" stroke-opacity="1.0" stroke="#9c7ba1"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 231.347870,-206.164413 L 279.550598,-175.667099"
+              class="id_BXP id_SPG" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 228.644455,-217.336624 L 260.614014,-271.667603"
+              class="id_BXP id_VNO" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 231.512848,-214.446381 L 328.125000,-270.312164"
+              class="id_BXP id_KIM" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 342.266632,-277.770416 L 414.554993,-312.367126"
+              class="id_KIM id_PLD" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 420.208618,-323.666626 L 415.720276,-346.204193"
+              class="id_PLD id_REG" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 337.788239,-281.833801 L 344.096252,-299.153809"
+              class="id_KIM id_SLG" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 427.652435,-321.243866 L 471.607788,-361.775238"
+              class="id_PLD id_CPT" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 222.605927,-202.690964 L 205.923630,-137.434677"
+              class="id_BXP id_PSA" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 216.601639,-209.963608 L 156.535507,-206.367493"
+              class="id_BXP id_UDR" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 218.289642,-205.508255 L 178.645935,-174.452301"
+              class="id_BXP id_ESS" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 217.909363,-214.846786 L 163.220673,-250.921738"
+              class="id_BXP id_MAA" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 426.458588,-309.337799 L 446.412842,-281.740356"
+              class="id_PLD id_MAC" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 231.392563,-214.647537 L 273.169525,-240.466965"
+              class="id_BXP id_O" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 228.938721,-203.728622 L 263.187531,-150.891373"
+              class="id_BXP id_ARE" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 232.564697,-209.840240 L 288.386261,-205.631439"
+              class="id_BXP id_HST" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 222.374191,-218.129486 L 203.598175,-283.351593"
+              class="id_BXP id_WELL" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 429.741302,-316.511200 L 478.187408,-320.708221"
+              class="id_PLD id_FR" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 292.678864,-166.547089 L 331.400787,-137.098801"
+              class="id_SPG id_VTR" stroke-opacity="1.0" stroke="#f97743"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -42.732983,-217.276443 L -58.573681,-172.175812"
+              class="id_MET id_TRV" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -13.131861,4.680529 L -54.002548,2.362183"
+              class="id_C id_AIG" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -64.588089,230.210663 L -197.950760,240.427170"
+              class="id_GE id_RTX" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -207.652695,248.849976 L -211.725540,267.290680"
+              class="id_RTX id_HON" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -212.923264,237.157822 L -278.425293,200.825714"
+              class="id_RTX id_PPG" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -293.409821,196.519363 L -348.368958,193.589111"
+              class="id_PPG id_DD" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -290.189789,190.521881 L -321.985687,147.692093"
+              class="id_PPG id_AA" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -282.010529,189.708771 L -261.056213,145.249191"
+              class="id_PPG id_MMM" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -212.241089,245.951187 L -262.237457,284.855347"
+              class="id_RTX id_BA" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -49.804420,225.396713 L -7.552211,199.308914"
+              class="id_GE id_DIS" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -61.582676,235.867538 L -82.337051,262.035614"
+              class="id_GE id_HD" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -91.949135,274.819885 L -102.141449,289.131042"
+              class="id_HD id_WMT" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -291.597168,202.030273 L -333.215698,236.296692"
+              class="id_PPG id_UNP" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -46.130112,-230.060760 L -116.136169,-290.669708"
+              class="id_MET id_CVX" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -127.886642,-301.517120 L -176.506851,-349.359711"
+              class="id_CVX id_XOM" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -130.184372,-295.910156 L -225.902298,-295.959320"
+              class="id_CVX id_COP" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -48.015049,-223.792282 L -112.732651,-215.372192"
+              class="id_MET id_FDX" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -188.002625,-360.487610 L -229.613312,-400.111023"
+              class="id_XOM id_NEE" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -241.171555,-411.174713 L -279.810150,-448.352936"
+              class="id_NEE id_AEP" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -279.726929,-459.358887 L -259.383972,-478.348999"
+              class="id_AEP id_DUK" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -291.367706,-459.417328 L -321.646393,-488.257050"
+              class="id_AEP id_SO" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -55.304420,237.492096 L -36.827999,349.061096"
+              class="id_GE id_PFE" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -32.318481,364.284668 L -14.731140,404.545227"
+              class="id_PFE id_MRK" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -34.463173,364.883362 L -23.220491,449.164764"
+              class="id_PFE id_JNJ" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -28.048798,462.512451 L -56.949829,489.114746"
+              class="id_JNJ id_ABT" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -20.436569,464.906067 L -6.501481,527.968811"
+              class="id_JNJ id_PG" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 2.460307,539.192932 L 28.460442,551.455261"
+              class="id_PG id_CL" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -4.432535,543.773071 L -2.604927,586.383667"
+              class="id_PG id_KO" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -1.476920,602.337708 L 1.323264,630.729797"
+              class="id_KO id_PEP" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -59.811241,222.267380 L -74.550682,188.492279"
+              class="id_GE id_VZ" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -80.672493,173.712799 L -87.250908,156.946701"
+              class="id_VZ id_T" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -32.845787,-228.235947 L 19.204718,-252.775574"
+              class="id_MET id_BRK-B" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -275.110840,294.347687 L -311.943237,320.061005"
+              class="id_BA id_GD" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -325.240997,328.952942 L -351.605042,345.826477"
+              class="id_GD id_LMT" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -365.086395,354.443481 L -382.550720,365.591583"
+              class="id_LMT id_NOC" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -40.570168,-232.809509 L -42.799400,-269.266968"
+              class="id_MET id_WPC" stroke-opacity="1.0" stroke="#9c7ba1"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -51.886673,236.055313 L -21.837406,277.113220"
+              class="id_GE id_MCD" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M 2.934392,646.648438 L 4.159026,658.446838"
+              class="id_PEP id_MO" stroke-opacity="1.0" stroke="#407fff"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -341.240814,-508.235779 L -362.326630,-531.252625"
+              class="id_SO id_tesouro_longo" stroke-opacity="1.0"
+              stroke="#3499b4"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -374.726135,-541.032593 L -413.815094,-562.719055"
+              class="id_tesouro_longo id_tesouro_medio" stroke-opacity="1.0"
+              stroke="#28b36a"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -363.434357,-543.899963 L -314.979248,-620.011963"
+              class="id_tesouro_longo id_tesouro_tips" stroke-opacity="1.0"
+              stroke="#28b36a"/>
+        <path fill="none" stroke-width="2.349238"
+              d="M -427.924805,-570.259155 L -473.960999,-593.936401"
+              class="id_tesouro_medio id_tesouro_curto" stroke-opacity="1.0"
+              stroke="#28b36a"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="37.328564"
+                class="id_MSFT" cy="246.04616" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="116.32622"
+                class="id_INTC" cy="262.1044" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="127.38615"
+                class="id_IBM" cy="227.25797" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="12.88" cx="200.24712"
+                class="id_ORCL" cy="333.75717" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="158.70218"
+                class="id_CSCO" cy="295.778" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="179.99811"
+                class="id_HPQ" cy="246.53918" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-90.17294"
+                class="id_T" cy="149.49944" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-77.75046"
+                class="id_VZ" cy="181.16006" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-106.78232"
+                class="id_WMT" cy="295.64737" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-4.775347"
+                class="id_PG" cy="535.7804" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-2.262115"
+                class="id_KO" cy="594.37634" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="2.1084583"
+                class="id_PEP" cy="638.69116" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="35.696095"
+                class="id_CL" cy="554.8678" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="12.88" cx="5.604411"
+                class="id_MO" cy="672.372" stroke="#203f7f" stroke-opacity="1.0"
+                stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-56.61146"
+                class="id_GE" cy="229.5996" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-213.45085"
+                class="id_HON" cy="275.10242" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-257.64554"
+                class="id_MMM" cy="138.01266" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-205.92738"
+                class="id_RTX" cy="241.03824" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-268.55118"
+                class="id_BA" cy="289.76828" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-358.34314"
+                class="id_LMT" cy="350.139" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="12.88" cx="-394.3514"
+                class="id_NOC" cy="373.12442" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-318.5029"
+                class="id_GD" cy="324.6404" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-182.20912"
+                class="id_XOM" cy="-354.9708" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-122.18437"
+                class="id_CVX" cy="-295.90604" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-233.9023"
+                class="id_COP" cy="-295.96344" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-356.3576"
+                class="id_DD" cy="193.16318" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-285.42117"
+                class="id_PPG" cy="196.9453" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-326.7543"
+                class="id_AA" cy="141.26868" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-5.1447"
+                class="id_C" cy="5.133592" stroke="#203f7f" stroke-opacity="1.0"
+                stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="27.245472"
+                class="id_BAC" cy="-21.09888" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-12.240118"
+                class="id_JPM" cy="97.95436" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="67.2423"
+                class="id_WFC" cy="-146.58206" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="52.415276"
+                class="id_USB" cy="-114.94991" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-61.989708"
+                class="id_AIG" cy="1.9091196" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-40.08191"
+                class="id_MET" cy="-224.82442" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-61.224754"
+                class="id_TRV" cy="-164.62784" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="26.44084"
+                class="id_BRK-B" cy="-256.1871" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-22.162704"
+                class="id_JNJ" cy="457.0945" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-35.520958"
+                class="id_PFE" cy="356.9536" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-11.528666"
+                class="id_MRK" cy="411.87628" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-62.83592"
+                class="id_ABT" cy="494.53268" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-87.308266"
+                class="id_HD" cy="268.30356" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-17.112617"
+                class="id_MCD" cy="283.56894" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-0.7451687"
+                class="id_DIS" cy="195.10603" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="12.88" cx="-331.78384"
+                class="id_SO" cy="-497.91272" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-253.53601"
+                class="id_DUK" cy="-483.80807" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-285.5749"
+                class="id_AEP" cy="-453.8998" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-235.40681"
+                class="id_NEE" cy="-405.62784" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-339.3917"
+                class="id_UNP" cy="241.38167" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#407fff" r="7.36" cx="-120.66579"
+                class="id_FDX" cy="-214.34006" stroke="#203f7f"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="286.31113"
+                class="id_SPG" cy="-171.3898" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="451.10028"
+                class="id_MAC" cy="-275.25745" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="335.0505"
+                class="id_KIM" cy="-274.31683" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="414.15778"
+                class="id_REG" cy="-354.0501" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="224.58734"
+                class="id_BXP" cy="-210.44171" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="264.67114"
+                class="id_VNO" cy="-278.5625" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="346.83395"
+                class="id_SLG" cy="-306.67078" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="477.48907"
+                class="id_CPT" cy="-367.1984" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="156.5427"
+                class="id_MAA" cy="-255.32681" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="172.34824"
+                class="id_ESS" cy="-169.51883" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="148.5498"
+                class="id_UDR" cy="-205.88939" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="12.88" cx="199.72517"
+                class="id_WELL" cy="-296.8052" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="12.88" cx="342.54434"
+                class="id_VTR" cy="-128.62405" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="203.94221"
+                class="id_PSA" cy="-129.68393" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="267.5389"
+                class="id_ARE" cy="-144.17828" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="296.36362"
+                class="id_HST" cy="-205.02997" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="279.97473"
+                class="id_O" cy="-244.67279" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="12.88" cx="492.13516"
+                class="id_FR" cy="-321.91656" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="7.36" cx="421.77115"
+                class="id_PLD" cy="-315.8207" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#f97743" r="12.88" cx="-43.65385"
+                class="id_WPC" cy="-283.24088" stroke="#7c3b21"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#28b36a" r="12.88" cx="-486.41086"
+                class="id_tesouro_curto" cy="-600.3396" stroke="#145935"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+        <circle fill-opacity="1.0" fill="#28b36a" r="7.36" cx="-420.8106"
+                class="id_tesouro_medio" cy="-566.60016" stroke="#145935"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#28b36a" r="7.36" cx="-367.73062"
+                class="id_tesouro_longo" cy="-537.1515" stroke="#145935"
+                stroke-opacity="1.0" stroke-width="1.28"/>
+        <circle fill-opacity="1.0" fill="#28b36a" r="12.88" cx="-307.46075"
+                class="id_tesouro_tips" cy="-631.8218" stroke="#145935"
+                stroke-opacity="1.0" stroke-width="2.24"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="28" x="37.328564" y="255.31583" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MSFT">
+            MSFT
+        </text>
+        <text font-size="28" x="116.32622" y="271.37408" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_INTC">
+            INTC
+        </text>
+        <text font-size="28" x="127.38615" y="236.52763" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_IBM">
+            IBM
+        </text>
+        <text font-size="28" x="200.24712" y="343.02686" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_ORCL">
+            ORCL
+        </text>
+        <text font-size="28" x="158.70218" y="305.04767" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_CSCO">
+            CSCO
+        </text>
+        <text font-size="28" x="179.99811" y="255.80885" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_HPQ">
+            HPQ
+        </text>
+        <text font-size="28" x="-90.17294" y="158.7691" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_T">
+            T
+        </text>
+        <text font-size="28" x="-77.75046" y="190.42973" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_VZ">
+            VZ
+        </text>
+        <text font-size="28" x="-106.78232" y="304.91705" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_WMT">
+            WMT
+        </text>
+        <text font-size="28" x="-4.775347" y="545.05005" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_PG">
+            PG
+        </text>
+        <text font-size="28" x="-2.262115" y="603.646" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_KO">
+            KO
+        </text>
+        <text font-size="28" x="2.1084583" y="647.9608" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_PEP">
+            PEP
+        </text>
+        <text font-size="28" x="35.696095" y="564.13745" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_CL">
+            CL
+        </text>
+        <text font-size="28" x="5.604411" y="681.64166" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MO">
+            MO
+        </text>
+        <text font-size="28" x="-56.61146" y="238.86926" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_GE">
+            GE
+        </text>
+        <text font-size="28" x="-213.45085" y="284.37207" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_HON">
+            HON
+        </text>
+        <text font-size="28" x="-257.64554" y="147.28233" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MMM">
+            MMM
+        </text>
+        <text font-size="28" x="-205.92738" y="250.3079" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_RTX">
+            RTX
+        </text>
+        <text font-size="28" x="-268.55118" y="299.03796" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_BA">
+            BA
+        </text>
+        <text font-size="28" x="-358.34314" y="359.4087" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_LMT">
+            LMT
+        </text>
+        <text font-size="28" x="-394.3514" y="382.3941" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_NOC">
+            NOC
+        </text>
+        <text font-size="28" x="-318.5029" y="333.9101" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_GD">
+            GD
+        </text>
+        <text font-size="28" x="-182.20912" y="-345.7011" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_XOM">
+            XOM
+        </text>
+        <text font-size="28" x="-122.18437" y="-286.63635" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_CVX">
+            CVX
+        </text>
+        <text font-size="28" x="-233.9023" y="-286.6938" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_COP">
+            COP
+        </text>
+        <text font-size="28" x="-356.3576" y="202.43285" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_DD">
+            DD
+        </text>
+        <text font-size="28" x="-285.42117" y="206.21497" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_PPG">
+            PPG
+        </text>
+        <text font-size="28" x="-326.7543" y="150.53835" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_AA">
+            AA
+        </text>
+        <text font-size="28" x="-5.1447" y="14.403261" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_C">
+            C
+        </text>
+        <text font-size="28" x="27.245472" y="-11.829212" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_BAC">
+            BAC
+        </text>
+        <text font-size="28" x="-12.240118" y="107.22403" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_JPM">
+            JPM
+        </text>
+        <text font-size="28" x="67.2423" y="-137.3124" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_WFC">
+            WFC
+        </text>
+        <text font-size="28" x="52.415276" y="-105.680244" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_USB">
+            USB
+        </text>
+        <text font-size="28" x="-61.989708" y="11.178788" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_AIG">
+            AIG
+        </text>
+        <text font-size="28" x="-40.08191" y="-215.55475" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MET">
+            MET
+        </text>
+        <text font-size="28" x="-61.224754" y="-155.35817" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_TRV">
+            TRV
+        </text>
+        <text font-size="28" x="26.44084" y="-246.91743" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_BRK-B">
+            BRK-B
+        </text>
+        <text font-size="28" x="-22.162704" y="466.3642" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_JNJ">
+            JNJ
+        </text>
+        <text font-size="28" x="-35.520958" y="366.22327" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_PFE">
+            PFE
+        </text>
+        <text font-size="28" x="-11.528666" y="421.14594" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MRK">
+            MRK
+        </text>
+        <text font-size="28" x="-62.83592" y="503.80237" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_ABT">
+            ABT
+        </text>
+        <text font-size="28" x="-87.308266" y="277.57324" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_HD">
+            HD
+        </text>
+        <text font-size="28" x="-17.112617" y="292.83862" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MCD">
+            MCD
+        </text>
+        <text font-size="28" x="-0.7451687" y="204.3757" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_DIS">
+            DIS
+        </text>
+        <text font-size="28" x="-331.78384" y="-488.64307" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_SO">
+            SO
+        </text>
+        <text font-size="28" x="-253.53601" y="-474.5384" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_DUK">
+            DUK
+        </text>
+        <text font-size="28" x="-285.5749" y="-444.63013" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_AEP">
+            AEP
+        </text>
+        <text font-size="28" x="-235.40681" y="-396.35815" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_NEE">
+            NEE
+        </text>
+        <text font-size="28" x="-339.3917" y="250.65134" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_UNP">
+            UNP
+        </text>
+        <text font-size="28" x="-120.66579" y="-205.07039" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_FDX">
+            FDX
+        </text>
+        <text font-size="28" x="286.31113" y="-162.12013" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_SPG">
+            SPG
+        </text>
+        <text font-size="28" x="451.10028" y="-265.9878" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MAC">
+            MAC
+        </text>
+        <text font-size="28" x="335.0505" y="-265.04718" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_KIM">
+            KIM
+        </text>
+        <text font-size="28" x="414.15778" y="-344.78046" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_REG">
+            REG
+        </text>
+        <text font-size="28" x="224.58734" y="-201.17204" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_BXP">
+            BXP
+        </text>
+        <text font-size="28" x="264.67114" y="-269.29285" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_VNO">
+            VNO
+        </text>
+        <text font-size="28" x="346.83395" y="-297.40112" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_SLG">
+            SLG
+        </text>
+        <text font-size="28" x="477.48907" y="-357.9287" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_CPT">
+            CPT
+        </text>
+        <text font-size="28" x="156.5427" y="-246.05714" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_MAA">
+            MAA
+        </text>
+        <text font-size="28" x="172.34824" y="-160.24916" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_ESS">
+            ESS
+        </text>
+        <text font-size="28" x="148.5498" y="-196.61972" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_UDR">
+            UDR
+        </text>
+        <text font-size="28" x="199.72517" y="-287.53552" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_WELL">
+            WELL
+        </text>
+        <text font-size="28" x="342.54434" y="-119.354385" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_VTR">
+            VTR
+        </text>
+        <text font-size="28" x="203.94221" y="-120.41426" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_PSA">
+            PSA
+        </text>
+        <text font-size="28" x="267.5389" y="-134.90862" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_ARE">
+            ARE
+        </text>
+        <text font-size="28" x="296.36362" y="-195.7603" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_HST">
+            HST
+        </text>
+        <text font-size="28" x="279.97473" y="-235.40312" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_O">
+            O
+        </text>
+        <text font-size="28" x="492.13516" y="-312.6469" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_FR">
+            FR
+        </text>
+        <text font-size="28" x="421.77115" y="-306.55103" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_PLD">
+            PLD
+        </text>
+        <text font-size="28" x="-43.65385" y="-273.9712" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_WPC">
+            WPC
+        </text>
+        <text font-size="28" x="-486.41086" y="-591.06995" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_tesouro_curto">
+            tesouro_curto
+        </text>
+        <text font-size="28" x="-420.8106" y="-557.3305" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_tesouro_medio">
+            tesouro_medio
+        </text>
+        <text font-size="28" x="-367.73062" y="-527.88184" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_tesouro_longo">
+            tesouro_longo
+        </text>
+        <text font-size="28" x="-307.46075" y="-622.5521" fill-opacity="1.0"
+              fill="#000000" font-family="Arial" style="text-anchor: middle;"
+              class="id_tesouro_tips">
+            tesouro_tips
+        </text>
+    </g>
+</svg>

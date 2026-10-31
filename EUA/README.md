@@ -21,6 +21,23 @@ A lista final e as classes estão em `python/portfolio_metrics.py`. O universo
 delimitado não elimina vieses de seleção ou sobrevivência. O merge mantém
 VTR ausente antes de 01/05/1998; as séries não têm cobertura inicial uniforme.
 
+Os preços ajustados de ações e REITs são coletados por `collect_stocks_reits.py`
+via yfinance. As quatro séries de títulos são índices sintéticos calculados
+a partir de taxas do FRED; não são preços observados de ETFs ou de uma carteira
+de títulos específicos. A referência livre de risco é `tesouro_curto`, baseada
+na taxa de Treasury de três meses.
+
+## Construção do grafo
+
+`build_graph.py` utiliza apenas os preços da janela de construção. Calcula
+retornos simples diários com `pct_change(fill_method=None)`, correlações de
+Pearson por pares disponíveis e distâncias `d(i,j) = sqrt(2 * (1 - rho(i,j)))`.
+Não preenche preços ausentes para calcular esses retornos. Cada ativo é um
+vértice e cada par é uma aresta do grafo completo, com peso igual à distância.
+A matriz tem 74 vértices e 2.701 arestas não orientadas; Prim extrai uma MST
+com 73 arestas. As correlações por pares podem utilizar históricos de comprimentos
+diferentes; a separação temporal não elimina essa limitação de cobertura.
+
 ## Série nominal aproximada de TIPS
 
 `tesouro_tips` permanece ausente antes da primeira taxa DFII10 disponível;
@@ -47,22 +64,47 @@ Para reconstruir com taxas e CPI locais, siga o roteiro da raiz. O coletor
 tenta baixar o CPI se esse arquivo estiver ausente. A reconstrução financeira
 validada usou as entradas locais, sem recoleta de preços de mercado.
 
+Para os Treasury nominais, o coletor usa `r(t) ≈ y(t-1)/252 - D * Δy(t)`,
+com taxas em decimal e durations constantes de 0,25, 4,5 e 8,5 para curto,
+médio e longo. O TIPS usa a fórmula nominal acima, com duration 8,5 e carrego
+real por dias corridos. Todos são aproximações financeiras.
+
 ## Tamanhos de carteira
 
 - **Experimento principal: N=10.** Concentrada: mínimo 1 ativo por classe,
   resto livre, no máximo 2 Treasury. Diversificada: cotas fixas
   4 ações / 4 REITs / 2 Treasury, escolha por classe (ver abaixo).
-- **Experimento "realista"**: concentrada N=10 vs diversificada N=20.
+- **Experimento "realista"**: concentrada N=10 vs diversificada N=20,
+  com 9 ações / 8 REITs / 3 Treasury. Esse rótulo identifica um cenário de
+  tamanhos distintos; continuam valendo as simplificações de execução.
 - **Varredura de sensibilidade**: N = 6, 8, 10, 12, 15, 18, 24. O N=8 está
   incluído para permitir comparação com o Brasil.
+
+Na varredura, a diversificada usa `t = min(4, max(2, int(0.15*N + 0.5)))`
+Treasury e divide as `N-t` posições entre ações e REITs; se o restante for
+ímpar, a posição extra vai para ações. A varredura compara grafo completo e
+concentrada; não inclui uma varredura de carteiras MST.
+
+Os backtests sem aportes começam com pesos iguais e mantêm as quantidades
+compradas, sem rebalanceamento, custos ou impostos, admitindo frações.
+As cotas restringem o número de ativos de cada classe, não os pesos finais.
+
+## Seleção da carteira concentrada
+
+O algoritmo começa com um representante de cada classe: o ativo dessa classe
+com menor distância média ao universo. Completa a carteira escolhendo, a cada
+passo, o candidato com menor distância média aos ativos já selecionados,
+respeitando o máximo de dois Treasury. A composição por classe pode diferir
+da diversificada; essa referência não isola o efeito da correlação.
 
 ## Seleção da carteira diversificada: farthest-first por classe
 
 A distância é medida **dentro de cada classe**, isoladamente, começando pelo
 par mais distante da classe. A cada passo, escolhe-se o candidato com a maior
-distância mínima aos ativos já selecionados dessa classe. Isso evita que um ativo de outra classe,
-próximo por acaso, esconda a redundância entre dois ativos da mesma classe,
-e evita que concentrada e diversificada partam do mesmo ativo pivô.
+distância mínima aos ativos já selecionados dessa classe, até preencher a cota.
+Se a cota for um, escolhe o ativo de maior distância média dentro da classe.
+A seleção dentro da classe evita que a proximidade com ativos de outra classe
+determine sua composição interna. É uma heurística, sem garantia de ótimo global.
 O resultado é avaliado por duas métricas: `score_geral` (todos os pares) e
 `score_intra_classe` (só pares da mesma classe). O `backtest.py` também roda
 as variantes antigas (`original`, `cotas_global`) para comparação.
@@ -70,7 +112,7 @@ as variantes antigas (`original`, `cotas_global`) para comparação.
 ## Estrutura
 
 ```
-data/raw/        precos_acoes_reits.csv, fred_taxas_brutas.csv, tesouro_retornos.csv
+data/raw/        preços ajustados, taxas FRED, CPI e índices sintéticos de títulos
 data/processed/  precos_final.csv, distance_matrix.csv, carteiras_niveis.csv,
                  resultado_backtest.csv, resultado_varredura_n.csv, resultados de aportes
 python/
@@ -81,21 +123,62 @@ python/
   build_graph.py            matriz de correlação (pairwise) e distância, só in-sample
   portfolio_metrics.py      métricas e construção das carteiras
   backtest.py               backtest buy-and-hold + varredura de N
+  mst_portfolios.py         seleção usando caminhos na MST
+  backtest_mst.py           comparação das três carteiras principais
+  comparar_aleatorias_mst.py  referência de 5.000 carteiras com as mesmas cotas
   aportes_mensais.py        aportes mensais (igualitário vs inteligente), XIRR e TWR
+  estabilidade_mst.py       sobreposição de arestas entre subperíodos
+  robustez_janela_comum.py  sensibilidade à construção em 2003–2010
+  resumir_benchmark_prim.py  tabelas e figuras das medições de Prim
+  test_*.py                testes automatizados
 cpp/
   mst.cpp                   grafo (matriz de adjacência) + MST via Prim, O(V^2)
+  benchmark_prim.cpp        medição da rotina Prim
   Makefile
 ```
 
 ## Como rodar (Linux / Ubuntu 24.04)
 
-Use o [roteiro completo na raiz](../README.md#eua--execução-com-dados-locais).
-Ele compila o Prim e gera a carteira MST antes dos experimentos que dependem
-dela. Os comandos abaixo são referências para módulos específicos, após
-preparar as entradas e executar suas dependências. Históricos de preços não
-acompanham o repositório; o depósito do dataset está adiado.
+Instale e ative o ambiente conforme o [README da raiz](../README.md).
+Antes da execução, coloque em `EUA/data/raw/`:
 
-## Decisões herdadas do projeto brasileiro
+- `precos_acoes_reits.csv`;
+- `fred_taxas_brutas.csv`;
+- `fred_cpi_mensal.csv`.
+
+Essas entradas locais não acompanham o código; o depósito do dataset está
+adiado. A reconstrução abaixo não exige chave FRED quando as taxas e o CPI
+já estão presentes. Para recoleta de taxas, o coletor requer `FRED_API_KEY`;
+recoletar dados pode produzir históricos diferentes dos usados no estudo.
+
+A partir da **raiz do repositório**, com o ambiente ativado:
+
+```bash
+cd EUA/python
+python -B -m unittest discover -p 'test_*.py'
+python collect_tesouro_fred.py --usar-taxas-locais
+python merge_sources.py
+python build_graph.py
+python portfolio_metrics.py
+python backtest.py
+cd ../cpp
+make run
+cd ../python
+python mst_portfolios.py
+python backtest_mst.py
+python comparar_aleatorias_mst.py
+python aportes_mensais.py
+python estabilidade_mst.py --executavel ../cpp/mst
+python robustez_janela_comum.py --executavel ../cpp/mst
+cd ../..
+```
+
+Os comandos regeneram arquivos locais. Compile e execute Prim antes de
+`mst_portfolios.py`; gere a carteira MST antes dos backtests e aportes que a
+utilizam. Os comandos do benchmark estão na seção correspondente abaixo e
+no README da raiz. Os 20 testes foram aprovados na validação Ubuntu documentada.
+
+## Regras comuns de avaliação
 
 - Correlação *pairwise* (nunca `.dropna()` geral antes de `.corr()`).
 - O grafo é construído só com dados in-sample; o backtest usa só o período seguinte.
@@ -237,6 +320,15 @@ Saídas em `data/processed/estabilidade_mst/`: matrizes e arestas por janela,
 comparação das conexões, graus, cobertura e resumo com hashes das entradas.
 O teste não modifica a árvore principal nem avalia retorno de carteiras.
 
+## Métricas
+
+CAGR é a taxa composta anualizada pelo tempo corrido (anos de 365,25 dias).
+A volatilidade anual é o desvio amostral dos retornos diários vezes `sqrt(252)`;
+o drawdown máximo é o mínimo de `patrimonio / maximo_acumulado - 1`.
+O número efetivo de ativos é `1 / sum(peso_final**2)`.
+`score_geral` é a distância média entre todos os pares da carteira e
+`score_intra_classe` considera apenas pares da mesma classe.
+
 O backtest buy-and-hold usa `sharpe = média(r_carteira - r_tesouro_curto) /
 desvio_padrão(r_carteira - r_tesouro_curto) * sqrt(252)`, com retornos simples
 diários nas mesmas datas e desvio amostral (`ddof=1`). A anualização pressupõe
@@ -246,7 +338,7 @@ volatilidade_anual` permanece como `razao_cagr_excedente_vol` nos dois CSVs do
 backtest, para comparação. Os aportes mensais também usam excessos diários no
 Sharpe; a comparação com buy-and-hold deve considerar fluxos e datas efetivas.
 
-### Aportes mensais revisados
+## Aportes mensais
 
 Execute `python3 aportes_mensais.py` em `python/`. Cenários de US$0 e US$100 mil
 iniciais, com US$1.000 mensais. Carteiras: concentrada N=10, diversificada pelo
@@ -273,13 +365,48 @@ O terminal mostra os percentuais finais de todos os ativos. Saídas adicionais:
 peso final, total aplicado, participação nos aportes MENSAIS, escolhas e maior
 sequência de escolhas), `operacoes_aportes.csv` (sinal e execução),
 `diario_aportes.csv` e `experimento_aportes.json` (regras e hashes). Os CSVs
-`resultado_aportes_sem_inicial.csv` e `resultado_aportes_com_inicial.csv` são
-atualizados; o último agora corresponde a US$100 mil, não US$1 milhão.
+`resultado_aportes_sem_inicial.csv` e `resultado_aportes_com_inicial.csv`
+separam os cenários de capital inicial zero e US$100 mil.
 O maior peso observado considera fechamentos antes e depois dos aportes, não
 máximas intradiárias. No cenário sem capital inicial, a primeira compra da
 estratégia de pior retorno necessariamente concentra 100% num ativo; isso é
 parte da regra. A sequência de escolhas conta somente aportes mensais dessa
 estratégia, não a alocação inicial nem as compras igualitárias.
+
+São 16 cenários: quatro carteiras × duas modalidades × dois capitais iniciais.
+O XIRR é a taxa interna de retorno dos fluxos de caixa, enquanto o TWR acumula
+retornos descontando o efeito mecânico dos aportes. Não substituir um pelo
+outro ao comparar as modalidades.
+
+## Onde consultar as saídas
+
+Os caminhos abaixo são relativos a `EUA/data/processed/`, exceto a exportação
+C++ indicada. Os CSVs financeiros armazenam taxas e pesos em forma decimal
+(por exemplo, `0.12` significa 12%); Sharpe e scores não são percentuais.
+
+| Arquivo ou diretório | Conteúdo |
+|---|---|
+| `precos_final.csv` | Preços ajustados e índices sintéticos alinhados |
+| `distance_matrix.csv` | Distâncias do grafo completo, calculadas na construção |
+| `EUA/cpp/mst_edges.csv` (caminho desde a raiz) | As 73 arestas exportadas por Prim |
+| `distance_matrix_mst.csv`, `carteiras_mst.csv` | Caminhos na árvore, seleção MST, pesos iniciais e procedência |
+| `resultado_backtest_mst.csv`, `curvas_backtest_mst.csv` | Três carteiras principais, métricas, ativos, pesos finais e evolução normalizada |
+| `resultado_backtest.csv` | Variantes de seleção, cenário realista e resultados das 500 aleatórias por níveis |
+| `carteiras_niveis.csv` | Amostra de 500 carteiras dividida em cinco níveis de score; distinta das 5.000 com cotas |
+| `resultado_varredura_n.csv` | Concentrada e diversificada pelo grafo completo nos sete valores de N |
+| `resultado_aleatorias_cotas.csv` | Métricas individuais das 5.000 carteiras de referência com cotas 4/4/2 |
+| `comparacao_aleatorias_mst.csv`, `referencias_aleatorias_cotas.csv` | Percentuais superados e métricas das duas diversificadas de referência |
+| `experimento_aleatorias_cotas.json` | Regras e hashes da comparação aleatória |
+| `comparacao_aportes_completa.csv` | Indicadores e patrimônio dos 16 cenários com aportes |
+| `pesos_finais_aportes.csv` | Valores e pesos finais por ativo, aportes e sequências de escolhas |
+| `operacoes_aportes.csv`, `diario_aportes.csv`, `experimento_aportes.json` | Sinais, compras, evolução diária e regras dos aportes |
+| `estabilidade_mst/` | Árvores por janela, comparação de arestas e resumo da estabilidade |
+| `robustez_janela_comum/` | Seleções, curvas e métricas para a construção alternativa em 2003–2010 |
+| `benchmark_prim/`, `benchmark_prim_grandes/` | Medições, ambiente, resumos e gráficos de desempenho computacional |
+
+Nas comparações financeiras, o CSV principal para consultar as três estratégias
+é `resultado_backtest_mst.csv`. As figuras do fluxograma e do Gephi ficam em
+[`../visualizacoes/`](../visualizacoes/README.md).
 
 Estabilidade, robustez da janela, benchmarks e aportes já foram executados.
 Consulte os [resultados consolidados](../artigo/resultados/RESUMO.md) e o

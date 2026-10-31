@@ -9,7 +9,7 @@ EUA/cpp/mst
 BRASIL/cpp/mst
 EUA/cpp/benchmark_prim
 
-# Dataset será distribuído separadamente; preservar instruções de posicionamento.
+# Dados locais: preservar instruções de posicionamento, sem redistribuir históricos.
 EUA/data/raw/*
 BRASIL/data/raw/*
 !EUA/data/raw/README.md
@@ -22,3 +22,17 @@ BRASIL/data/archive/
 
 # Logs locais de execução; o relatório resumido permanece versionado.
 validacao/execucao_*/
+
+# Pacotes locais de dados para revisão; não enviar históricos ao GitHub.
+deposito_zenodo/*.zip
+deposito_zenodo/separado/*.zip
+artigo/pacote_resultados_chatgpt/*.zip
+
+# Apoio local à redação e ao depósito; não integra a entrega do código.
+PENDENCIAS_LOCAIS.md
+artigo/PLANO_DO_ARTIGO.md
+artigo/PASSAGEM_PARA_CHATGPT.md
+artigo/reunir_material_chatgpt.py
+artigo/preparar_zip_resultados_chatgpt.py
+artigo/pacote_resultados_chatgpt/
+deposito_zenodo/

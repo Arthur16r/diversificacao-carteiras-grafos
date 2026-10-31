@@ -66,8 +66,12 @@ reprodução autônoma do experimento anterior.
 | Script | Função |
 |---|---|
 | `visualizacoes/gerar_fluxograma.py` | Fluxograma SVG/PDF/PNG |
+| `visualizacoes/gerar_fluxograma_horizontal.py` | Fluxograma compacto para o artigo IEEE |
 | `visualizacoes/exportar_mst_eua_gephi.py` | Exportação validada para Gephi |
 | `artigo/consolidar_resultados.py` | Consolidação e comparação Windows/Ubuntu |
 
 Não foi criado menu ou `main.py` central. A sequência está no README da raiz;
 uma interface unificada seria conveniência, não requisito do enunciado.
+
+Os rascunhos de redação, a passagem para o ChatGPT, os pacotes de envio e as
+consultas para depósito são materiais locais, excluídos do versionamento.

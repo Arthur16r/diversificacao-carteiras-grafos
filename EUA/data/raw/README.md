@@ -7,7 +7,9 @@ Antes de executar os comandos do README da raiz, coloque nesta pasta:
 - `fred_cpi_mensal.csv`
 
 Os dados existentes no computador não foram removidos, mas ficam fora do Git.
-O depósito científico e seu link ainda serão preparados. A partir dessas
-entradas, o pipeline reconstrói `tesouro_retornos.csv` e as saídas processadas.
+O depósito científico está adiado; os preços do Yahoo Finance não têm
+autorização de redistribuição. Consulte o README da raiz para a situação dos
+dados. A partir dessas entradas, o pipeline reconstrói `tesouro_retornos.csv`
+e as saídas processadas.
 Não substituir os dados por uma nova coleta ao tentar reproduzir o experimento
 congelado: provedores podem revisar históricos.

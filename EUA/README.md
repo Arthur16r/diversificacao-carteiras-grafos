@@ -1,32 +1,25 @@
-# Diversificação via MST — Mercado Americano
+# EUA — experimento principal
 
-Experimento principal do projeto. O projeto brasileiro (mesma metodologia,
-já testada e corrigida) passa a ser o estudo complementar/réplica num
-mercado emergente.
+Seleção de carteiras pelo grafo completo e pelos caminhos da MST, comparada
+com uma carteira concentrada e referências aleatórias. O Brasil é o estudo
+complementar. Instalação, entradas e sequência completa de execução estão no
+[README da raiz](../README.md), validado no Ubuntu 24.04 via WSL2.
 
 ## Janelas de tempo
 
 - **Construção do grafo/MST (in-sample)**: 1990-01-01 a 2010-12-31
-- **Backtest (fora da amostra)**: 2011-01-01 a 2026-07-01
+- **Backtest (fora da amostra)**: preços de 2011-01-03 a 2026-06-30.
+  O limite configurado de 2026-07-01 é exclusivo.
 
 ## Pool de ativos (74)
 
-- **50 ações**: líderes de mercado por setor entre 1990-2010 (baseado na
-  composição histórica do S&P 500, não nas maiores empresas de hoje)
-- **20 REITs**: equivalente aos FIIs brasileiros
+- **50 ações** e **20 REITs**, em um universo fixado para o estudo.
 - **4 séries de Treasury (FRED, não fundos)**: curto (3 meses), médio
   (5 anos), longo (10 anos) e TIPS (10 anos reais, histórico só desde ~2003)
 
-Substituições feitas por eventos corporativos reais (documentadas):
-DRE→WPC (Duke Realty comprada pela Prologis, 2022), UTX→RTX (fusão
-UTC/Raytheon, 2020; o negócio ficou mais estreito após a saída de Carrier e
-Otis), DOW→PPG (a "DOW" atual é uma empresa nova, cindida em 2019),
-AVB→CPT e EQR→MAA (AvalonBay e Equity Residential se fundiram em
-ago/2026, virando VMRK), EXR→ARE (EXR abriu capital só em 2004; regra:
-cobertura mínima de ~50% da janela de construção).
-
-Regra de limpeza (merge_sources.py): VTR é descartado antes de 01/05/1998,
-quando era a Vencor Inc. (operadora de hospitais), antes de virar REIT.
+A lista final e as classes estão em `python/portfolio_metrics.py`. O universo
+delimitado não elimina vieses de seleção ou sobrevivência. O merge mantém
+VTR ausente antes de 01/05/1998; as séries não têm cobertura inicial uniforme.
 
 ## Série nominal aproximada de TIPS
 
@@ -50,23 +43,11 @@ TIPS usa-se o valor de contingência oficial 325.604, sem alterar o CSV bruto
 ([tabela do Treasury](https://www.treasurydirect.gov/instit/annceresult/tipscpi/2025/CPI_20251218.pdf)).
 Referência da indexação: [TreasuryDirect — Appendix B](https://www.treasurydirect.gov/files/laws-and-regulations/auction-regulations-uoc/auct-reg-gsr-31-cfr-356.pdf).
 
-Para reconstruir usando as taxas já salvas, execute em `python/`:
+Para reconstruir com taxas e CPI locais, siga o roteiro da raiz. O coletor
+tenta baixar o CPI se esse arquivo estiver ausente. A reconstrução financeira
+validada usou as entradas locais, sem recoleta de preços de mercado.
 
-```bash
-python3 -B -m unittest test_tips
-python3 collect_tesouro_fred.py --usar-taxas-locais
-python3 merge_sources.py
-python3 diagnosticar_saltos.py
-python3 build_graph.py
-python3 portfolio_metrics.py
-python3 backtest.py
-python3 aportes_mensais.py
-```
-
-O CPI é baixado se ainda não existir. Resultados anteriores à reconstrução
-não refletem esta correção; a mudança no grafo também pode mudar carteiras.
-
-## Tamanhos de carteira (decisão de desenho, tomada antes de ver resultados)
+## Tamanhos de carteira
 
 - **Experimento principal: N=10.** Concentrada: mínimo 1 ativo por classe,
   resto livre, no máximo 2 Treasury. Diversificada: cotas fixas
@@ -78,7 +59,8 @@ não refletem esta correção; a mudança no grafo também pode mudar carteiras.
 ## Seleção da carteira diversificada: farthest-first por classe
 
 A distância é medida **dentro de cada classe**, isoladamente, começando pelo
-par mais distante da classe. Isso evita que um ativo de outra classe,
+par mais distante da classe. A cada passo, escolhe-se o candidato com a maior
+distância mínima aos ativos já selecionados dessa classe. Isso evita que um ativo de outra classe,
 próximo por acaso, esconda a redundância entre dois ativos da mesma classe,
 e evita que concentrada e diversificada partam do mesmo ativo pivô.
 O resultado é avaliado por duas métricas: `score_geral` (todos os pares) e
@@ -107,21 +89,11 @@ cpp/
 
 ## Como rodar (Linux / Ubuntu 24.04)
 
-```bash
-pip install pandas numpy scipy yfinance requests
-cd python
-python3 collect_stocks_reits.py
-python3 collect_tesouro_fred.py      # precisa de chave FRED em FRED_API_KEY
-python3 merge_sources.py
-python3 diagnosticar_saltos.py       # conferir antes de seguir
-python3 build_graph.py
-python3 portfolio_metrics.py
-python3 backtest.py
-python3 aportes_mensais.py
-
-cd ../cpp
-make && make run
-```
+Use o [roteiro completo na raiz](../README.md#eua--execução-com-dados-locais).
+Ele compila o Prim e gera a carteira MST antes dos experimentos que dependem
+dela. Os comandos abaixo são referências para módulos específicos, após
+preparar as entradas e executar suas dependências. Históricos de preços não
+acompanham o repositório; o depósito do dataset está adiado.
 
 ## Decisões herdadas do projeto brasileiro
 
@@ -237,13 +209,11 @@ de 100 mil vértices exigiriam 80 GB; um milhão exigiria 8 TB. Esses valores s�
 cálculos analíticos, não medições nem tentativas de alocação. Não extrapolar
 tempos medidos em memória para situações com paginação em disco.
 A compilação e a execução foram validadas no Ubuntu 24.04 via WSL2.
-As medições abaixo são Windows; não confundir com o benchmark Ubuntu
-preservado em `../artigo/resultados/fontes/ubuntu_wsl/`.
-Na extensão executada, as medianas foram 416,33 ms (10 mil) e 2044,53 ms
-(20 mil), razão de 4,91 ao dobrar V. Cada mediana agrega 50 medições
-(cinco sementes, dez repetições). Esses dois pontos não demonstram uma nova
-complexidade: Θ(V²) continua sendo a análise dos laços; efeitos de memória,
-cache e ambiente são hipóteses para os desvios, sem isolamento causal neste teste.
+Para o artigo, use as medições Ubuntu preservadas em
+`../artigo/resultados/fontes/ubuntu_wsl/`, sem misturá-las com as medições
+Windows. Os dois pontos da extensão não demonstram uma nova complexidade:
+Θ(V²) continua sendo a análise dos laços; efeitos de memória, cache e ambiente
+são hipóteses para os desvios, sem isolamento causal neste teste.
 
 Análise teórica: V iterações completas de duas varreduras de V posições dão
 2V² visitas aos corpos dos laços, independentemente dos pesos de um grafo completo.
@@ -311,7 +281,7 @@ estratégia de pior retorno necessariamente concentra 100% num ativo; isso é
 parte da regra. A sequência de escolhas conta somente aportes mensais dessa
 estratégia, não a alocação inicial nem as compras igualitárias.
 
-- Conferir com `inspecionar_datas.py`: ORCL (1992, 1997, 1999), USB 1992,
-  HD 2000-10-12, HST 1991, RTX 2001-09-17.
-- Estabilidade da MST entre subperíodos (arestas em comum / (V-1)).
-- Benchmark de tempo do Prim conforme V cresce (exigido pelo enunciado).
+Estabilidade, robustez da janela, benchmarks e aportes já foram executados.
+Consulte os [resultados consolidados](../artigo/resultados/RESUMO.md) e o
+[relatório de validação](../validacao/RELATORIO.md). Os diagnósticos disponíveis
+no código são ferramentas de inspeção, não filtros automáticos de ativos.

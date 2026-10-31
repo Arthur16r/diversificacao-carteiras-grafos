@@ -54,7 +54,8 @@ Layout dos fechamentos: [B3](https://www.b3.com.br/data/files/33/67/B9/50/D84057
 
 ## Execução com dados locais
 
-Instale pandas, numpy, scipy e yfinance; g++/make para C++. Em `BRASIL/python`:
+Prepare o ambiente e as entradas conforme o [README da raiz](../README.md),
+que contém a sequência completa validada no Ubuntu 24.04. Em `BRASIL/python`:
 
 ```bash
 python3 -B -m unittest test_dados test_backtest test_mst_portfolios test_aleatorias_cotas test_aportes_mensais

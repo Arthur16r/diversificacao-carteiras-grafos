@@ -2,7 +2,9 @@
 
 Projeto de AEDS2 que investiga risco e desempenho de carteiras selecionadas
 por grafos de correlação e árvores geradoras mínimas. EUA é o estudo principal;
-Brasil é o complementar. A redação do artigo está pausada.
+Brasil é o complementar. O objetivo é investigar empiricamente os benefícios
+e as limitações da diversificação por heurísticas de distância, sem implementar
+otimização média-variância nem presumir superioridade em qualquer período.
 
 ## Organização
 
@@ -15,8 +17,8 @@ Brasil é o complementar. A redação do artigo está pausada.
 
 Catálogo: [ORGANIZACAO.md](ORGANIZACAO.md).
 Resultados: [artigo/resultados/RESUMO.md](artigo/resultados/RESUMO.md).
-O plano do artigo é provisório; a motivação central é investigar benefícios
-da diversificação usando grafos e árvores como instrumentos.
+Os materiais de redação e passagem para outras ferramentas são mantidos
+localmente e não são necessários para executar o projeto.
 
 ## Preparação no Ubuntu 24.04
 
@@ -50,11 +52,14 @@ Os dados devem estar nos caminhos abaixo antes de executar o pipeline:
 
 As séries sintéticas de títulos e todos os arquivos de `data/processed/`
 são gerados pelos comandos abaixo; não são pré-requisitos dessa reconstrução.
-Quando o dataset for publicado, estas entradas precisarão ser extraídas para
-os mesmos caminhos. O link do depósito ainda não está disponível.
+O depósito do dataset no Zenodo está adiado. O Yahoo Finance respondeu à
+consulta do autor informando que os dados fornecidos pelo serviço não devem
+ser redistribuídos. Por isso, os históricos de preços não acompanham o código.
+O esclarecimento sobre a publicação de resultados derivados ainda está pendente.
 Os CSVs de preços e as saídas volumosas não são versionados no Git: clonar
 somente o código não basta para executar os experimentos. Tabelas consolidadas,
-figuras e fontes selecionadas continuam disponíveis para consulta no repositório.
+figuras e fontes selecionadas estão preservadas no repositório privado;
+sua inclusão em uma versão pública será revisada antes da publicação.
 
 Para nova coleta FRED, defina sua chave no terminal, sem inseri-la no código:
 
@@ -156,9 +161,16 @@ já preservados: `artigo/resultados/fontes/ubuntu_wsl/EUA/data/processed/`.
 Na raiz:
 
 ```bash
+python visualizacoes/gerar_fluxograma_horizontal.py
 python visualizacoes/gerar_fluxograma.py
 python visualizacoes/exportar_mst_eua_gephi.py
 ```
+
+O fluxograma horizontal para o artigo está em
+[visualizacoes/fluxograma_metodologia_horizontal.pdf](visualizacoes/fluxograma_metodologia_horizontal.pdf),
+com versões SVG e PNG. O gerador horizontal produz apenas essas figuras;
+não executa backtests. A versão vertical original também foi preservada.
+Instruções de uso no LaTeX: [visualizacoes/README.md](visualizacoes/README.md).
 
 Importação: [visualizacoes/gephi/README.md](visualizacoes/gephi/README.md).
 O exportador usa a MST existente, sem recalculá-la.
@@ -193,5 +205,9 @@ Ubuntu 24.04, execução via terminal e instruções objetivas, sem exigir
 menu ou arquivo Python central.
 
 Código: [Arthur16r/diversificacao-carteiras-grafos](https://github.com/Arthur16r/diversificacao-carteiras-grafos),
-mantido privado nesta etapa. O depósito do dataset tratado no Zenodo ou
-Mendeley Data ainda está pendente. Nenhum upload é feito pelos comandos do pipeline.
+mantido privado nesta etapa. Torná-lo público e compartilhar o link com o
+professor ainda são tarefas pendentes; não foram realizados nesta atualização.
+Até lá, a avaliação pelo link depende da concessão de acesso ao repositório.
+O autor informou que o professor admite a indisponibilidade do depósito dos
+dados caso não seja possível obter autorização. O Zenodo permanece adiado.
+Nenhum upload é feito pelos comandos do pipeline.

@@ -121,7 +121,10 @@ validado no Ubuntu 24.04. São necessárias as entradas em `BRASIL/data/raw/`:
 - `tesouro_bruto.csv`;
 - `xpml11_b3_janeiro2026.csv`.
 
-Os históricos não acompanham o código; o depósito do dataset está adiado.
+O bruto e os índices de títulos estão no
+[depósito parcial do Zenodo](https://doi.org/10.5281/zenodo.23751340), sob ODbL 1.0.
+Os históricos de ações/FIIs/ETF e a tabela de fechamentos B3 ficam excluídos:
+o depósito não basta para reconstruir os backtests completos.
 O coletor reconstrói `tesouro_series_rolling.csv` a partir do bruto local.
 Não é necessário ter arquivos processados ou binários anteriores.
 

@@ -52,9 +52,19 @@ Os dados devem estar nos caminhos abaixo antes de executar o pipeline:
 
 As séries sintéticas de títulos e todos os arquivos de `data/processed/`
 são gerados pelos comandos abaixo; não são pré-requisitos dessa reconstrução.
-O depósito do dataset no Zenodo está adiado. O Yahoo Finance respondeu à
+Há um **depósito parcial**, publicado em 06/11/2026:
+[Dados de títulos públicos e benchmark de Prim — DOI 10.5281/zenodo.23751340](https://doi.org/10.5281/zenodo.23751340).
+Inclui taxas/CPI e índices sintéticos dos EUA, dados e índices de títulos
+brasileiros e as medições originais de Prim no Ubuntu. O ZIP preserva os
+caminhos `EUA/data/raw/` e `BRASIL/data/raw/` para os dados de títulos; as
+medições ficam em `BENCHMARK_UBUNTU/` dentro do pacote.
+
+**O depósito não contém todas as entradas acima e não reproduz sozinho os
+backtests completos.** Ficam excluídos preços Yahoo, fechamentos B3, tabelas
+combinadas, matrizes e resultados financeiros. O Yahoo Finance respondeu à
 consulta do autor informando que os dados fornecidos pelo serviço não devem
-ser redistribuídos. Por isso, os históricos de preços não acompanham o código.
+ser redistribuídos e não autorizou a coleta programática descrita no pedido.
+Por isso, os históricos de preços não acompanham o código nem o depósito.
 O esclarecimento sobre a publicação de resultados derivados ainda está pendente.
 Os CSVs de preços e as saídas volumosas não são versionados no Git: clonar
 somente o código não basta para executar os experimentos. Tabelas consolidadas,
@@ -208,6 +218,10 @@ Código: [Arthur16r/diversificacao-carteiras-grafos](https://github.com/Arthur16
 mantido privado nesta etapa. Torná-lo público e compartilhar o link com o
 professor ainda são tarefas pendentes; não foram realizados nesta atualização.
 Até lá, a avaliação pelo link depende da concessão de acesso ao repositório.
-O autor informou que o professor admite a indisponibilidade do depósito dos
-dados caso não seja possível obter autorização. O Zenodo permanece adiado.
+O depósito parcial está disponível no [Zenodo](https://doi.org/10.5281/zenodo.23751340),
+com atribuições e condições por componente. Os dados de origem Federal Reserve
+Board/BLS mantêm a condição de domínio público; o componente Tesouro brasileiro
+mantém ODbL 1.0 e as contribuições autorais indicadas usam CC BY 4.0.
+O autor informou que o professor admite a indisponibilidade dos demais dados
+caso não seja possível obter autorização.
 Nenhum upload é feito pelos comandos do pipeline.

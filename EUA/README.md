@@ -146,8 +146,11 @@ Antes da execução, coloque em `EUA/data/raw/`:
 - `fred_taxas_brutas.csv`;
 - `fred_cpi_mensal.csv`.
 
-Essas entradas locais não acompanham o código; o depósito do dataset está
-adiado. A reconstrução abaixo não exige chave FRED quando as taxas e o CPI
+As taxas e o CPI estão no
+[depósito parcial do Zenodo](https://doi.org/10.5281/zenodo.23751340), junto dos
+índices de títulos e benchmarks. O CSV de preços de ações/REITs fica excluído:
+o depósito não basta para reconstruir os backtests completos. A reconstrução
+abaixo não exige chave FRED quando as taxas e o CPI
 já estão presentes. Para recoleta de taxas, o coletor requer `FRED_API_KEY`;
 recoletar dados pode produzir históricos diferentes dos usados no estudo.
 

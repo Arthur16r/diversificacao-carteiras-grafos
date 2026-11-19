@@ -53,7 +53,7 @@ def main():
     caixa(0.45, 5.30, 3.8, 1.85, "Construção do grafo", "Retornos diários\nCorrelações por pares\nGrafo completo", "construcao")
     caminho([(6.2, 7.975), (6.2, 7.85), (2.35, 7.85), (2.35, 7.175)])
     caixa(5.10, 6.30, 4.5, 1.40, "Seleção pelo grafo", "Concentrada e diversificada\nDistâncias do grafo", "construcao")
-    caixa(5.10, 4.45, 4.5, 1.45, "Prim e seleção pela MST", "Distâncias dos caminhos\nDiversificada: mesmas cotas", "construcao")
+    caixa(5.10, 4.45, 4.5, 1.45, "Prim e seleção na MST", "Distâncias dos caminhos\nDiversificada: mesmas cotas", "construcao")
     caminho([(4.275, 6.22), (4.65, 6.22), (4.65, 7.05), (5.075, 7.05)])
     caminho([(4.65, 6.22), (4.65, 5.175), (5.075, 5.175)])
 

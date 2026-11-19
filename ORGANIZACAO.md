@@ -5,10 +5,11 @@ existentes; fórmulas e algoritmos financeiros foram preservados.
 
 ## Entrada central
 
-`main.py` oferece as etapas `testes`, `principal`, `complementares`, `benchmark`
-e `completo`, com seleção de mercado. `--listar` mostra o plano e `--verificar`
+`main.py` oferece as etapas `testes`, `principal`, `complementares`, `benchmark`,
+`visualizacoes` e `completo`, com seleção de mercado. `--listar` mostra o plano e `--verificar`
 confere as entradas sem executar. `test_main.py` verifica a orquestração e a
-interrupção por falhas. Instalação e exemplos estão no README da raiz;
+interrupção por falhas. `visualizacoes/test_gerar_grafos.py` confere a procedência
+e o universo das figuras com dados sintéticos. Instalação e exemplos estão no README da raiz;
 obtenção e formatos de dados estão em [OBTENCAO_DADOS.md](OBTENCAO_DADOS.md).
 
 ## Pipeline dos dois mercados
@@ -76,6 +77,7 @@ reprodução autônoma do experimento anterior.
 |---|---|
 | `visualizacoes/gerar_fluxograma.py` | Fluxograma SVG/PDF/PNG |
 | `visualizacoes/gerar_fluxograma_horizontal.py` | Fluxograma compacto para o artigo IEEE |
+| `visualizacoes/gerar_grafos.py` | Imagens locais da MST e do grafo completo, EUA e Brasil, com legenda e procedência |
 | `visualizacoes/exportar_mst_eua_gephi.py` | Exportação validada para Gephi |
 | `artigo/consolidar_resultados.py` | Consolidação e comparação Windows/Ubuntu |
 

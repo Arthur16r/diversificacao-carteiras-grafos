@@ -12,7 +12,7 @@ otimização média-variância nem presumir superioridade em qualquer período.
   `cpp/` para Prim e Makefile; `data/raw/` para entradas e `data/processed/`
   para matrizes, carteiras e resultados.
 - `BRASIL/python/anterior/`: histórico fora do pipeline atual; não executar.
-- `visualizacoes/`: fluxograma e exportação para Gephi.
+- `visualizacoes/`: fluxograma, imagens automáticas dos grafos e exportação para Gephi.
 - `artigo/resultados/`: consolidação com fontes Windows e Ubuntu separadas.
 - `main.py`: executor central dos testes e experimentos pelo terminal.
 
@@ -99,6 +99,7 @@ python main.py --mercado eua --etapa principal
 python main.py --mercado brasil --etapa principal
 python main.py --mercado ambos --etapa complementares
 python main.py --mercado eua --etapa benchmark
+python main.py --mercado ambos --etapa visualizacoes
 ```
 
 | Etapa | Conteúdo e pré-requisitos |
@@ -107,7 +108,8 @@ python main.py --mercado eua --etapa benchmark
 | `principal` | Reconstrução local dos títulos, merge, grafo, seleções, backtest/varredura, compilação de Prim, MST e comparação principal; exige os brutos listados acima |
 | `complementares` | 5.000 aleatórias e aportes; EUA também estabilidade/robustez, Brasil também IVVB11; exige `principal` concluído |
 | `benchmark` | Compila e mede Prim e gera resumos; organizado em EUA/cpp e exige a matriz real já gerada |
-| `completo` | Testes, principal e complementares dos mercados escolhidos; inclui benchmark padrão se EUA estiver selecionado |
+| `visualizacoes` | Imagens automáticas da MST e do grafo completo dos mercados escolhidos, mais fluxograma horizontal; os grafos exigem `principal` concluído |
+| `completo` | Testes, principal, complementares e visualizações dos mercados escolhidos; inclui benchmark padrão se EUA estiver selecionado |
 
 Para executar essa sequência completa, com todas as entradas locais disponíveis:
 
@@ -125,8 +127,8 @@ python main.py --mercado ambos --etapa principal --verificar
 `--listar` funciona sem dados e sem compilador. `--verificar` confere entradas,
 cabeçalhos básicos e dependências antes de qualquer etapa. A execução normal
 regenera as saídas locais selecionadas; os brutos existentes não são recoletados.
-Nenhum coletor Yahoo é chamado pelo executor. Visualizações manuais do Gephi
-e consolidação do artigo têm seus procedimentos próprios descritos abaixo.
+Nenhum coletor Yahoo é chamado pelo executor. Os projetos editados manualmente
+no Gephi e a consolidação do artigo têm seus procedimentos próprios descritos abaixo.
 As compilações usam `make -B` para reconstruir o executável com a configuração
 atual, inclusive ao alternar entre ambientes. Validação do executor e seus
 limites: [validacao/EXECUTOR.md](validacao/EXECUTOR.md).
@@ -235,11 +237,37 @@ já preservados: `artigo/resultados/fontes/ubuntu_wsl/EUA/data/processed/`.
 
 ## Visualizações e consolidação
 
-Na raiz:
+Na raiz, o executor pode gerar somente imagens, sem refazer backtests:
+
+```bash
+python main.py --mercado ambos --etapa visualizacoes
+python main.py --mercado eua --etapa visualizacoes --figura grafos
+python main.py --etapa visualizacoes --figura fluxograma
+```
+
+Sem `--figura`, gera grafos e fluxograma. Os grafos exigem as matrizes, a MST
+e a carteira MST da etapa principal. `--figura fluxograma` funciona sem dados
+de mercado. `--listar` e `--verificar` também funcionam nessa etapa.
+
+As imagens automáticas ficam em `visualizacoes/automaticas/EUA/` e
+`visualizacoes/automaticas/BRASIL/`, em SVG, PDF e PNG. Cada pasta recebe
+um `procedencia.json` com hashes das entradas, seleção e posições dos nós.
+Os arquivos são gerados localmente e excluídos do Git. O Brasil usa os
+37 ativos do universo principal, sem IVVB11.
+
+A MST e o grafo completo usam as mesmas posições, determinadas pela
+topologia da árvore. As cores representam classes e o tamanho destaca
+a carteira **MST**, inclusive no grafo completo. O comprimento visual e
+a espessura não codificam distância. Não há filtragem das arestas completas.
+As figuras do Gephi e sua disposição manual permanecem preservadas.
+
+Os geradores individuais também continuam disponíveis:
 
 ```bash
 python visualizacoes/gerar_fluxograma_horizontal.py
 python visualizacoes/gerar_fluxograma.py
+python visualizacoes/gerar_grafos.py --mercado eua
+python visualizacoes/gerar_grafos.py --mercado brasil
 python visualizacoes/exportar_mst_eua_gephi.py
 ```
 

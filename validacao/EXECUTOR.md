@@ -5,6 +5,38 @@ com o mesmo interpretador Python e os diretórios de trabalho de cada mercado.
 Não altera as regras financeiras, a seleção ou o Prim. Os comandos completos,
 as consultas sem execução e os pré-requisitos estão no README da raiz.
 
+## Ampliação para visualizações — 19/11/2026
+
+A etapa `visualizacoes` gera imagens automáticas da MST e do grafo completo
+dos mercados escolhidos, além do fluxograma horizontal. `--figura grafos`
+ou `--figura fluxograma` restringe a geração; `completo` inclui as imagens
+depois dos experimentos. As figuras automáticas ficam em uma pasta local
+ignorada pelo Git, separada dos projetos manuais do Gephi.
+
+- **51 testes aprovados no Windows e no Ubuntu:** 11 do executor, três de
+  procedência/universo das figuras, 20 dos EUA e 17 do Brasil.
+- Execução real da etapa de grafos pelo `main.py` no Windows: seis imagens
+  por mercado (dois desenhos em SVG/PDF/PNG), com registro de procedência.
+- Ubuntu/WSL: em cópia temporária, testes do executor/figuras, fluxograma sem
+  dados de mercado, bloqueio da geração de grafos sem entradas, e execução
+  completa de `visualizacoes` após copiar somente as matrizes, árvores,
+  carteiras e módulo de classificação de cada mercado.
+- Contagens conferidas: EUA 74 nós, 73 arestas na MST e 2.701 no grafo
+  completo; Brasil 37 nós, 36/666 arestas, preservando a exclusão de IVVB11
+  do experimento principal. Destaque de 10/8 ativos das carteiras MST.
+- Os testes rejeitam carteira com hash desatualizado e matriz doméstica
+  incompatível com a matriz de origem. O gerador também confere conectividade,
+  duplicatas, pesos e simetria antes de desenhar.
+- Inspeção visual de figuras dos dois mercados; redução automática de
+  colisões entre rótulos, com posições dos nós iguais entre os dois desenhos.
+- O título do bloco do fluxograma foi encurtado para “Prim e seleção na MST”
+  porque a renderização no Ubuntu excedia a largura por cerca de dois pixels.
+  As figuras horizontais foram regeneradas com esse ajuste textual.
+
+Nenhum backtest, seleção financeira ou medição de benchmark foi refeito
+para essa ampliação. Não foram alterados os arquivos ou layouts do Gephi.
+As verificações da implementação inicial do executor estão registradas abaixo.
+
 ## Verificações realizadas
 
 - Windows: os 45 testes aprovados; pré-verificação

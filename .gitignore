@@ -20,6 +20,7 @@ BRASIL/data/processed/*
 !BRASIL/data/processed/README.md
 BRASIL/data/archive/
 dados_zenodo/
+visualizacoes/automaticas/
 
 # Logs locais de execução; o relatório resumido permanece versionado.
 validacao/execucao_*/

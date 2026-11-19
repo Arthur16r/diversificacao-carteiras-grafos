@@ -71,6 +71,24 @@ class TestExecutor(unittest.TestCase):
         brasil = next(p for p in passos if p.nome == "BRASIL: executar Prim")
         self.assertIn("distance_matrix_sem_exterior.csv", brasil.comando[-1])
 
+    def test_fluxograma_nao_exige_matrizes_ou_compilador(self):
+        passos = main.plano(("EUA", "BRASIL"), "visualizacoes", figura="fluxograma")
+        self.assertEqual(len(passos), 1)
+        self.assertEqual(passos[0].entradas, (Path("visualizacoes/gerar_fluxograma_horizontal.py"),))
+        self.assertFalse(any(p.comando[0] == "make" for p in passos))
+
+    def test_imagens_seguem_principal_no_completo(self):
+        passos = main.plano(("BRASIL",), "completo")
+        backtest = next(i for i, p in enumerate(passos) if p.nome == "BRASIL: backtest_mst.py")
+        imagens = next(i for i, p in enumerate(passos) if p.nome == "BRASIL: imagens do grafo e da MST")
+        self.assertLess(backtest, imagens)
+        self.assertIn(Path("BRASIL/data/processed/distance_matrix_sem_exterior.csv"), passos[imagens].entradas)
+
+    def test_figura_fora_da_etapa_visualizacoes_e_rejeitada(self):
+        with redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as erro:
+            main.main(["--etapa", "principal", "--figura", "grafos"])
+        self.assertEqual(erro.exception.code, 2)
+
 
 if __name__ == "__main__":
     unittest.main()

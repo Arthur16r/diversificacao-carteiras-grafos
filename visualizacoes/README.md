@@ -1,4 +1,57 @@
-# Fluxograma da metodologia
+# Visualizações do projeto
+
+## Geração pelo executor central
+
+Na raiz, com o ambiente Python ativado:
+
+```bash
+python main.py --mercado ambos --etapa visualizacoes
+python main.py --mercado brasil --etapa visualizacoes --figura grafos
+python main.py --etapa visualizacoes --figura fluxograma
+```
+
+O padrão é `--figura todas`. `--listar` mostra os comandos e `--verificar`
+confere os pré-requisitos sem gerar arquivos. `completo` também gera essas
+visualizações depois dos experimentos. Não exige Gephi ou novos pacotes além
+das dependências já listadas no projeto.
+
+## Imagens automáticas da MST e do grafo completo
+
+As matrizes, `cpp/mst_edges.csv` e `data/processed/carteiras_mst.csv` devem
+estar disponíveis após a etapa principal. Não é necessário executar os
+complementares nem o benchmark. O gerador verifica hashes da carteira,
+simetria da matriz, conectividade e pesos da árvore antes de desenhar.
+
+São gerados em `automaticas/EUA/` e `automaticas/BRASIL/`:
+
+- `mst_eua.svg`, `.pdf`, `.png` (ou `mst_brasil`).
+- `grafo_completo_eua.svg`, `.pdf`, `.png` (ou `grafo_completo_brasil`).
+- `procedencia.json`, com hashes, ativos selecionados, contagens e posições.
+
+Os arquivos dessa pasta são locais e ignorados pelo Git. Ambos os desenhos
+usam as mesmas posições e todos os ativos do respectivo experimento principal:
+74 nos EUA e 37 no Brasil, sem IVVB11. São 73/2.701 arestas, respectivamente,
+para MST/grafo completo nos EUA, e 36/666 no Brasil. As cores representam
+classes e os círculos maiores identificam a seleção **pela MST**, inclusive
+no grafo completo; não representam a seleção pela matriz completa.
+
+O layout radial usa o centro do diâmetro topológico da MST, divide os setores
+pela quantidade de folhas e posiciona os nós por profundidade. Não usa pesos
+das arestas nem resultados financeiros para posicionar os nós. Portanto,
+comprimento visual e espessura não codificam distância de correlação.
+O grafo completo mostra todas as conexões com baixa opacidade.
+
+Essas figuras são uma alternativa automática. Os `.gephi`, SVGs exportados
+manualmente, legendas existentes e a disposição feita no Gephi são preservados.
+Para apresentação em uma página pequena, a exportação manual pode permitir
+um acabamento mais fino dos rótulos.
+
+Também é possível chamar o gerador diretamente:
+
+```bash
+python visualizacoes/gerar_grafos.py --mercado eua
+python visualizacoes/gerar_grafos.py --mercado brasil --destino pasta_de_figuras
+```
 
 ## Versão horizontal para o artigo IEEE
 

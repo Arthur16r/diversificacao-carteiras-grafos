@@ -115,7 +115,16 @@ O catálogo dos diagnósticos e módulos de apoio está em
 ## Execução com dados locais
 
 Prepare o ambiente e as entradas conforme o [README da raiz](../README.md),
-validado no Ubuntu 24.04. São necessárias as entradas em `BRASIL/data/raw/`:
+validado no Ubuntu 24.04. Obtenção e formatos estão em
+[OBTENCAO_DADOS.md](../OBTENCAO_DADOS.md). O executor central pode rodar este
+mercado, a partir da raiz:
+
+```bash
+python main.py --mercado brasil --etapa principal
+python main.py --mercado brasil --etapa complementares
+```
+
+São necessárias as entradas em `BRASIL/data/raw/`:
 
 - `precos_acoes_fiis.csv`;
 - `tesouro_bruto.csv`;

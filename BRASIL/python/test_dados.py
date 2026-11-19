@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 import pandas as pd
 
 from collect_tesouro import montar_series_rolling
@@ -16,15 +17,19 @@ class TestDados(unittest.TestCase):
         s = montar_series_rolling(pd.DataFrame(rows))
         self.assertAlmostEqual(s.loc['2020-01-03', 'prefixado_longo'], 103.)
 
-    def test_xpml_ponte_preserva_retornos_reais_e_idempotencia(self):
+    def test_xpml_ponte_preserva_retornos_e_idempotencia(self):
         datas = pd.to_datetime(['2026-01-12','2026-01-13','2026-01-14','2026-01-15','2026-01-16','2026-01-19','2026-01-20'])
         p = pd.DataFrame({'XPML11.SA': [14.,14.1,.13,.14,.13,103.,104.]}, index=datas)
-        c = corrigir_xpml(p)
+        # Cotações sintéticas: este teste não depende do CSV de mercado local.
+        oficiais = pd.DataFrame({'fechamento': [100., 101., 102., 100., 99.],
+                                 'provento_ex': [0., 0., 0., 0., 1.]}, index=datas[1:6])
+        with patch('limpar_precos.pd.read_csv', return_value=oficiais):
+            c = corrigir_xpml(p)
+            pd.testing.assert_frame_equal(c, corrigir_xpml(c))
         self.assertAlmostEqual(c.loc['2026-01-19','XPML11.SA'],103.)
-        self.assertAlmostEqual(c.loc['2026-01-14','XPML11.SA']/c.loc['2026-01-13','XPML11.SA'],110.40/110.13)
-        self.assertAlmostEqual(c.loc['2026-01-19','XPML11.SA']/c.loc['2026-01-16','XPML11.SA'],110.52/110.)
+        self.assertAlmostEqual(c.loc['2026-01-14','XPML11.SA']/c.loc['2026-01-13','XPML11.SA'],101./100.)
+        self.assertAlmostEqual(c.loc['2026-01-19','XPML11.SA']/c.loc['2026-01-16','XPML11.SA'],(99.+1.)/100.)
         self.assertAlmostEqual(c.iloc[1,0]/c.iloc[0,0],14.1/14.)
-        pd.testing.assert_frame_equal(c,corrigir_xpml(c))
         self.assertEqual(p.iloc[2,0],.13)
 
 

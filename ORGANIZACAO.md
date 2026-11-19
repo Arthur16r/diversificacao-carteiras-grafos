@@ -1,6 +1,15 @@
 # Catálogo dos códigos
 
-Revisão em 26/10/2026. Não foram alteradas fórmulas, seleção, algoritmos ou resultados.
+Catálogo atualizado em 19/11/2026. O executor central coordena as rotinas
+existentes; fórmulas e algoritmos financeiros foram preservados.
+
+## Entrada central
+
+`main.py` oferece as etapas `testes`, `principal`, `complementares`, `benchmark`
+e `completo`, com seleção de mercado. `--listar` mostra o plano e `--verificar`
+confere as entradas sem executar. `test_main.py` verifica a orquestração e a
+interrupção por falhas. Instalação e exemplos estão no README da raiz;
+obtenção e formatos de dados estão em [OBTENCAO_DADOS.md](OBTENCAO_DADOS.md).
 
 ## Pipeline dos dois mercados
 
@@ -70,8 +79,8 @@ reprodução autônoma do experimento anterior.
 | `visualizacoes/exportar_mst_eua_gephi.py` | Exportação validada para Gephi |
 | `artigo/consolidar_resultados.py` | Consolidação e comparação Windows/Ubuntu |
 
-Não foi criado menu ou `main.py` central. A sequência está no README da raiz;
-uma interface unificada seria conveniência, não requisito do enunciado.
+A sequência individual continua no README da raiz; o `main.py` chama esses
+mesmos scripts em processos separados para evitar conflitos de módulos homônimos.
 
 Os rascunhos de redação, a passagem para o ChatGPT, os pacotes de envio e as
 consultas para depósito são materiais locais, excluídos do versionamento.

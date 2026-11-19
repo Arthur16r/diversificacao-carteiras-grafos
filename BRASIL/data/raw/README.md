@@ -1,5 +1,7 @@
 # Entradas locais — Brasil
 
+Procedimentos de obtenção e formatos: [OBTENCAO_DADOS.md](../../../OBTENCAO_DADOS.md).
+
 Antes de executar o README da raiz, coloque nesta pasta:
 
 - `precos_acoes_fiis.csv`

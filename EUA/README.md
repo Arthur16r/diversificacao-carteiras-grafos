@@ -140,6 +140,14 @@ cpp/
 ## Como rodar (Linux / Ubuntu 24.04)
 
 Instale e ative o ambiente conforme o [README da raiz](../README.md).
+Para obter ou preparar as entradas, consulte [OBTENCAO_DADOS.md](../OBTENCAO_DADOS.md).
+O executor central pode rodar este mercado, a partir da raiz:
+
+```bash
+python main.py --mercado eua --etapa principal
+python main.py --mercado eua --etapa complementares
+```
+
 Antes da execução, coloque em `EUA/data/raw/`:
 
 - `precos_acoes_reits.csv`;

@@ -1,5 +1,7 @@
 # Entradas locais — EUA
 
+Procedimentos de obtenção e formatos: [OBTENCAO_DADOS.md](../../../OBTENCAO_DADOS.md).
+
 Antes de executar os comandos do README da raiz, coloque nesta pasta:
 
 - `precos_acoes_reits.csv`

@@ -19,6 +19,7 @@ BRASIL/data/processed/*
 !EUA/data/processed/README.md
 !BRASIL/data/processed/README.md
 BRASIL/data/archive/
+dados_zenodo/
 
 # Logs locais de execução; o relatório resumido permanece versionado.
 validacao/execucao_*/

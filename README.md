@@ -14,6 +14,7 @@ otimização média-variância nem presumir superioridade em qualquer período.
 - `BRASIL/python/anterior/`: histórico fora do pipeline atual; não executar.
 - `visualizacoes/`: fluxograma e exportação para Gephi.
 - `artigo/resultados/`: consolidação com fontes Windows e Ubuntu separadas.
+- `main.py`: executor central dos testes e experimentos pelo terminal.
 
 Catálogo: [ORGANIZACAO.md](ORGANIZACAO.md).
 Resultados: [artigo/resultados/RESUMO.md](artigo/resultados/RESUMO.md).
@@ -79,6 +80,67 @@ export FRED_API_KEY="sua_chave"
 
 A reconstrução com os três CSVs locais dos EUA não precisa dessa chave.
 
+**Como obter e preparar essas entradas:** consulte
+[OBTENCAO_DADOS.md](OBTENCAO_DADOS.md). O roteiro mostra a extração do Zenodo,
+as alternativas de coleta FRED/Tesouro e os formatos das entradas excluídas.
+Ainda é necessária uma fonte com direitos de uso adequados para os históricos
+de ações/fundos/ETF; não há uma substituição integral validada neste projeto.
+
+## Executor central
+
+Na raiz, com o ambiente ativado, `python main.py` mostra a ajuda. Os scripts
+individuais abaixo continuam disponíveis. O executor usa o mesmo Python do
+ambiente atual e chama cada script no diretório correspondente, interrompendo
+a sequência no primeiro erro.
+
+```bash
+python main.py --mercado ambos --etapa testes
+python main.py --mercado eua --etapa principal
+python main.py --mercado brasil --etapa principal
+python main.py --mercado ambos --etapa complementares
+python main.py --mercado eua --etapa benchmark
+```
+
+| Etapa | Conteúdo e pré-requisitos |
+|---|---|
+| `testes` | Testes do executor e dos mercados escolhidos; usam dados sintéticos, sem arquivos de mercado |
+| `principal` | Reconstrução local dos títulos, merge, grafo, seleções, backtest/varredura, compilação de Prim, MST e comparação principal; exige os brutos listados acima |
+| `complementares` | 5.000 aleatórias e aportes; EUA também estabilidade/robustez, Brasil também IVVB11; exige `principal` concluído |
+| `benchmark` | Compila e mede Prim e gera resumos; organizado em EUA/cpp e exige a matriz real já gerada |
+| `completo` | Testes, principal e complementares dos mercados escolhidos; inclui benchmark padrão se EUA estiver selecionado |
+
+Para executar essa sequência completa, com todas as entradas locais disponíveis:
+
+```bash
+python main.py --mercado ambos --etapa completo
+```
+
+Examine os comandos ou confira os pré-requisitos sem executar experimentos:
+
+```bash
+python main.py --mercado ambos --etapa completo --listar
+python main.py --mercado ambos --etapa principal --verificar
+```
+
+`--listar` funciona sem dados e sem compilador. `--verificar` confere entradas,
+cabeçalhos básicos e dependências antes de qualquer etapa. A execução normal
+regenera as saídas locais selecionadas; os brutos existentes não são recoletados.
+Nenhum coletor Yahoo é chamado pelo executor. Visualizações manuais do Gephi
+e consolidação do artigo têm seus procedimentos próprios descritos abaixo.
+As compilações usam `make -B` para reconstruir o executável com a configuração
+atual, inclusive ao alternar entre ambientes. Validação do executor e seus
+limites: [validacao/EXECUTOR.md](validacao/EXECUTOR.md).
+
+O benchmark de 10 mil/20 mil vértices exige a opção explícita `--grandes`:
+
+```bash
+python main.py --mercado eua --etapa benchmark --grandes
+```
+
+Sem essa opção, `completo` inclui apenas o benchmark padrão. O benchmark fica
+no estudo dos EUA; `--mercado brasil --etapa benchmark` não é uma combinação
+válida. Em Windows sem g++/make no PATH, use o ambiente Ubuntu/WSL validado.
+
 ## Testes
 
 Na raiz, com o ambiente ativado. Execute os mercados separadamente, pois
@@ -91,6 +153,11 @@ cd ../../BRASIL/python
 python -B -m unittest discover -p 'test_*.py'
 cd ../..
 ```
+
+O comando central `python main.py --mercado ambos --etapa testes` coordena
+esses dois processos e os testes do próprio executor. O teste brasileiro da
+ponte XPML11 usa uma fonte sintética substituída em memória; não exige o CSV
+B3. A validação anterior dos experimentos permanece documentada no relatório.
 
 ## EUA — execução com dados locais
 
@@ -209,10 +276,10 @@ pesos por ativo ou métricas dentro da tolerância numérica da comparação.
 
 ## Entrada do programa e entregas
 
-Não há `main.py` central. Os scripts têm pontos de entrada próprios;
-os Makefiles compilam e executam o C++. O enunciado `pratica (5).pdf` exige
-Ubuntu 24.04, execução via terminal e instruções objetivas, sem exigir
-menu ou arquivo Python central.
+`main.py` organiza a execução pelo terminal; os scripts preservam seus pontos
+de entrada próprios e os Makefiles compilam o C++. O enunciado `pratica (5).pdf`
+exige Ubuntu 24.04 e instruções objetivas de execução. O executor central foi
+incluído para facilitar o uso e a demonstração do projeto.
 
 Código: [Arthur16r/diversificacao-carteiras-grafos](https://github.com/Arthur16r/diversificacao-carteiras-grafos),
 mantido privado nesta etapa. Torná-lo público e compartilhar o link com o

@@ -69,8 +69,7 @@ Por isso, os históricos de preços não acompanham o código nem o depósito.
 O esclarecimento sobre a publicação de resultados derivados ainda está pendente.
 Os CSVs de preços e as saídas volumosas não são versionados no Git: clonar
 somente o código não basta para executar os experimentos. Tabelas consolidadas,
-figuras e fontes selecionadas estão preservadas no repositório privado;
-sua inclusão em uma versão pública será revisada antes da publicação.
+figuras e fontes selecionadas estão preservadas no repositório do projeto.
 
 Para nova coleta FRED, defina sua chave no terminal, sem inseri-la no código:
 
@@ -310,9 +309,7 @@ exige Ubuntu 24.04 e instruções objetivas de execução. O executor central fo
 incluído para facilitar o uso e a demonstração do projeto.
 
 Código: [Arthur16r/diversificacao-carteiras-grafos](https://github.com/Arthur16r/diversificacao-carteiras-grafos),
-mantido privado nesta etapa. Torná-lo público e compartilhar o link com o
-professor ainda são tarefas pendentes; não foram realizados nesta atualização.
-Até lá, a avaliação pelo link depende da concessão de acesso ao repositório.
+disponível publicamente para consulta e avaliação.
 O depósito parcial está disponível no [Zenodo](https://doi.org/10.5281/zenodo.23751340),
 com atribuições e condições por componente. Os dados de origem Federal Reserve
 Board/BLS mantêm a condição de domínio público; o componente Tesouro brasileiro
